@@ -1,0 +1,73 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeavyLoaderComponent",
+        "6": [
+          "OnInit",
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "heavy_loader_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.ngfactory.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "HeavyLoaderComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "heavy-loader",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeavyLoaderComponent",
+        "moduleUrl": "asset:structural_directives/lib/heavy_loader_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "logs": "logs"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0,
+        1
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<span>heavy loader #{{id}} on duty!</span>",
+        "templateUrl": "asset:structural_directives/lib/heavy_loader_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

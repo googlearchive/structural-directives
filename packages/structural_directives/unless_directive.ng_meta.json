@@ -1,0 +1,110 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "UnlessDirective",
+        "5": [
+          {
+            "1": "TemplateRef",
+            "4": "_templateRef"
+          },
+          {
+            "1": "ViewContainerRef",
+            "4": "_viewContainer"
+          }
+        ]
+      }
+    ],
+    "6": "unless_directive.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.ngfactory.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "UnlessDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[myUnless]",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "UnlessDirective",
+        "moduleUrl": "asset:structural_directives/lib/unless_directive.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "TemplateRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/template_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ViewContainerRef",
+                "moduleUrl": "asset:angular2/lib/src/core/linker/view_container_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "myUnless": "myUnless"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
