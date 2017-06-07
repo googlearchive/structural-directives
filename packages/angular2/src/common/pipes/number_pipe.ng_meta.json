@@ -1,51 +1,29 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.pipes.number_pipe",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "package:angular2/di.dart",
         "2": [
-          "isNumber",
-          "isPresent",
-          "isBlank",
-          "StringWrapper",
-          "NumberWrapper",
-          "RegExpWrapper",
-          "FunctionWrapper"
+          "Injectable",
+          "PipeTransform",
+          "Pipe"
         ],
         "5": false
       },
       {
         "1": "package:angular2/src/facade/exceptions.dart",
         "2": [
-          "BaseException",
-          "WrappedException"
+          "BaseException"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/intl.dart",
-        "2": [
-          "NumberFormatter",
-          "NumberFormatStyle"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/core.dart",
-        "2": [
-          "Injectable",
-          "PipeTransform",
-          "WrappedValue",
-          "Pipe"
-        ],
+        "1": "package:intl/intl.dart",
         "5": false
       },
       {
         "1": "invalid_pipe_argument_exception.dart",
-        "2": [
-          "InvalidPipeArgumentException"
-        ],
         "5": false
       }
     ],
@@ -64,11 +42,8 @@
         "4": [
           {
             "1": "Pipe",
-            "3": [
-              {
-                "1": "name",
-                "2": "\"number\""
-              }
+            "2": [
+              "\"number\""
             ],
             "4": false
           },
@@ -86,11 +61,8 @@
         "4": [
           {
             "1": "Pipe",
-            "3": [
-              {
-                "1": "name",
-                "2": "\"percent\""
-              }
+            "2": [
+              "\"percent\""
             ],
             "4": false
           },
@@ -108,11 +80,8 @@
         "4": [
           {
             "1": "Pipe",
-            "3": [
-              {
-                "1": "name",
-                "2": "\"currency\""
-              }
+            "2": [
+              "\"currency\""
             ],
             "4": false
           },
@@ -129,36 +98,33 @@
     "6": "number_pipe.dart",
     "7": [
       {
-        "1": "package:angular2/src/facade/lang.ngfactory.dart",
+        "1": "package:angular2/di.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:angular2/src/facade/exceptions.ngfactory.dart",
+        "1": "package:angular2/src/facade/exceptions.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular2/src/facade/intl.ngfactory.dart",
+        "1": "invalid_pipe_argument_exception.template.dart",
         "4": "i2"
-      },
-      {
-        "1": "package:angular2/core.ngfactory.dart",
-        "4": "i3"
-      },
-      {
-        "1": "invalid_pipe_argument_exception.ngfactory.dart",
-        "4": "i4"
       }
     ]
   },
   "type": {
-    "NumberPipe": {
-      "class": "Type",
-      "name": "NumberPipe",
-      "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
+    "CurrencyPipe": {
+      "class": "Pipe",
+      "type": {
+        "class": "Type",
+        "name": "CurrencyPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "name": "currency",
+      "pure": true
     },
     "DecimalPipe": {
       "class": "Pipe",
@@ -172,7 +138,16 @@
         "diDeps": []
       },
       "name": "number",
-      "pure": false
+      "pure": true
+    },
+    "NumberPipe": {
+      "class": "Type",
+      "name": "NumberPipe",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
     },
     "PercentPipe": {
       "class": "Pipe",
@@ -186,21 +161,28 @@
         "diDeps": []
       },
       "name": "percent",
-      "pure": false
+      "pure": true
     },
-    "CurrencyPipe": {
-      "class": "Pipe",
-      "type": {
-        "class": "Type",
-        "name": "CurrencyPipe",
-        "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": []
-      },
-      "name": "currency",
-      "pure": false
+    "_NumberFormatStyle": {
+      "class": "Identifier",
+      "name": "_NumberFormatStyle",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_formatNumber": {
+      "class": "Identifier",
+      "name": "_formatNumber",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_normalizeLocale": {
+      "class": "Identifier",
+      "name": "_normalizeLocale",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

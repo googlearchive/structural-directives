@@ -1,26 +1,42 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.forms.directives.radio_control_value_accessor",
+    "1": "",
     "3": [
+      {
+        "1": "dart:js_util",
+        "4": "js_util",
+        "5": false
+      },
       {
         "1": "package:angular2/core.dart",
         "2": [
           "Directive",
           "ElementRef",
-          "Renderer",
-          "Self",
           "Provider",
-          "Attribute",
           "Input",
           "OnInit",
           "OnDestroy",
-          "Injector",
+          "Injector"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/di.dart",
+        "2": [
           "Injectable"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/common/forms/directives/control_value_accessor.dart",
+        "1": "package:func/func.dart",
+        "2": [
+          "Func0",
+          "VoidFunc0"
+        ],
+        "5": false
+      },
+      {
+        "1": "control_value_accessor.dart",
         "2": [
           "NG_VALUE_ACCESSOR",
           "ControlValueAccessor"
@@ -28,24 +44,9 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/common/forms/directives/ng_control.dart",
+        "1": "ng_control.dart",
         "2": [
           "NgControl"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "looseIdentical",
-          "isPresent"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/facade/collection.dart",
-        "2": [
-          "ListWrapper"
         ],
         "5": false
       }
@@ -63,10 +64,6 @@
       {
         "1": "RadioControlValueAccessor",
         "5": [
-          {
-            "1": "Renderer",
-            "4": "_renderer"
-          },
           {
             "1": "ElementRef",
             "4": "_elementRef"
@@ -126,6 +123,13 @@
         "deps": null
       }
     },
+    "RadioButtonState": {
+      "class": "Identifier",
+      "name": "RadioButtonState",
+      "moduleUrl": "asset:angular2/lib/src/common/forms/directives/radio_control_value_accessor.dart",
+      "prefix": null,
+      "value": null
+    },
     "RadioControlRegistry": {
       "class": "Type",
       "name": "RadioControlRegistry",
@@ -134,13 +138,6 @@
       "isHost": false,
       "value": null,
       "diDeps": []
-    },
-    "RadioButtonState": {
-      "class": "Identifier",
-      "name": "RadioButtonState",
-      "moduleUrl": "asset:angular2/lib/src/common/forms/directives/radio_control_value_accessor.dart",
-      "prefix": null,
-      "value": null
     },
     "RadioControlValueAccessor": {
       "class": "Directive",
@@ -160,28 +157,6 @@
               "value": null,
               "identifier": {
                 "class": "Identifier",
-                "name": "Renderer",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": false,
-            "isValue": false
-          },
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
                 "name": "ElementRef",
                 "moduleUrl": null,
                 "prefix": null,
@@ -189,8 +164,6 @@
               },
               "identifierIsInstance": false
             },
-            "query": null,
-            "viewQuery": null,
             "value": null,
             "isAttribute": false,
             "isSelf": false,
@@ -211,8 +184,6 @@
               },
               "identifierIsInstance": false
             },
-            "query": null,
-            "viewQuery": null,
             "value": null,
             "isAttribute": false,
             "isSelf": false,
@@ -233,8 +204,6 @@
               },
               "identifierIsInstance": false
             },
-            "query": null,
-            "viewQuery": null,
             "value": null,
             "isAttribute": false,
             "isSelf": false,
@@ -245,14 +214,17 @@
           }
         ]
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "name": "name"
       },
+      "inputTypes": {
+        "name": " String"
+      },
       "outputs": {},
       "hostListeners": {
-        "blur": "onTouched()",
-        "change": "onChange()"
+        "blur": "touchHandler()",
+        "change": "changeHandler()"
       },
       "hostProperties": {},
       "hostAttributes": {},

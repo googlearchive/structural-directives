@@ -1,45 +1,16 @@
 {
-  "ngDeps": {
-    "1": "angular2.src.core.di.reflective_key",
-    "3": [
-      {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "stringify",
-          "Type",
-          "isBlank"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/facade/exceptions.dart",
-        "2": [
-          "BaseException",
-          "WrappedException"
-        ],
-        "5": false
-      },
-      {
-        "1": "forward_ref.dart",
-        "2": [
-          "resolveForwardRef"
-        ],
-        "5": false
-      }
-    ],
-    "6": "reflective_key.dart"
-  },
+  "ngDeps": null,
   "type": {
-    "ReflectiveKey": {
+    "KeyRegistry": {
       "class": "Identifier",
-      "name": "ReflectiveKey",
+      "name": "KeyRegistry",
       "moduleUrl": "asset:angular2/lib/src/core/di/reflective_key.dart",
       "prefix": null,
       "value": null
     },
-    "KeyRegistry": {
+    "ReflectiveKey": {
       "class": "Identifier",
-      "name": "KeyRegistry",
+      "name": "ReflectiveKey",
       "moduleUrl": "asset:angular2/lib/src/core/di/reflective_key.dart",
       "prefix": null,
       "value": null

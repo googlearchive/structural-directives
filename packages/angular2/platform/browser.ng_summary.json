@@ -7,27 +7,14 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "Type",
-          "isPresent",
-          "isBlank"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/platform/browser_common.dart",
-        "2": [
-          "BROWSER_PROVIDERS",
-          "BROWSER_APP_COMMON_PROVIDERS",
-          "BROWSER_PLATFORM_MARKER"
-        ],
+        "1": "dart:html",
         "5": false
       },
       {
         "1": "package:angular2/compiler.dart",
         "2": [
-          "COMPILER_PROVIDERS"
+          "COMPILER_PROVIDERS",
+          "XHR"
         ],
         "5": false
       },
@@ -39,10 +26,29 @@
           "reflector",
           "ReflectiveInjector",
           "PlatformRef",
-          "OpaqueToken",
           "getPlatform",
-          "createPlatform",
-          "assertPlatform"
+          "createPlatform"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/compiler/runtime_compiler.dart",
+        "2": [
+          "RuntimeCompiler"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/di.dart",
+        "2": [
+          "Provider"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/linker/component_resolver.dart",
+        "2": [
+          "ComponentResolver"
         ],
         "5": false
       },
@@ -54,16 +60,17 @@
         "5": false
       },
       {
-        "1": "package:angular2/compiler.dart",
+        "1": "package:angular2/src/platform/browser_common.dart",
         "2": [
-          "XHR"
+          "BROWSER_PROVIDERS",
+          "BROWSER_APP_COMMON_PROVIDERS"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/core/di.dart",
+        "1": "package:angular2/src/platform/dom/dom_tokens.dart",
         "2": [
-          "Provider"
+          "DOCUMENT"
         ],
         "5": false
       }
@@ -73,16 +80,17 @@
         "1": "package:angular2/src/core/angular_entrypoint.dart"
       },
       {
+        "1": "package:angular2/src/core/security.dart",
+        "2": [
+          "SanitizationService",
+          "TemplateSecurityContext"
+        ]
+      },
+      {
         "1": "package:angular2/src/platform/browser_common.dart",
         "2": [
           "BROWSER_PROVIDERS",
-          "CACHED_TEMPLATE_PROVIDER",
-          "ELEMENT_PROBE_PROVIDERS",
-          "ELEMENT_PROBE_PROVIDERS_PROD_MODE",
-          "inspectNativeElement",
-          "BrowserDomAdapter",
-          "By",
-          "Title",
+          "BROWSER_SANITIZATION_PROVIDERS",
           "DOCUMENT",
           "enableDebugTools",
           "disableDebugTools"
@@ -106,8 +114,42 @@
           "value": null
         },
         {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "DOCUMENT",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": {
+            "class": "Factory",
+            "name": "defaultDocumentProvider",
+            "prefix": null,
+            "moduleUrl": null,
+            "value": null,
+            "diDeps": []
+          },
+          "multi": false,
+          "deps": []
+        },
+        {
           "class": "Identifier",
           "name": "COMPILER_PROVIDERS",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "RUNTIME_COMPILER_PROVIDERS",
           "moduleUrl": null,
           "prefix": null,
           "value": null
@@ -142,6 +184,58 @@
         }
       ]
     },
+    "RUNTIME_COMPILER_PROVIDERS": {
+      "class": "Identifier",
+      "name": "RUNTIME_COMPILER_PROVIDERS",
+      "moduleUrl": "asset:angular2/lib/platform/browser.dart",
+      "prefix": null,
+      "value": [
+        {
+          "class": "Identifier",
+          "name": "RuntimeCompiler",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "ComponentResolver",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "RuntimeCompiler",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ]
+    },
+    "bootstrap": {
+      "class": "Identifier",
+      "name": "bootstrap",
+      "moduleUrl": "asset:angular2/lib/platform/browser.dart",
+      "prefix": null,
+      "value": null
+    },
     "browserPlatform": {
       "class": "Identifier",
       "name": "browserPlatform",
@@ -149,9 +243,9 @@
       "prefix": null,
       "value": null
     },
-    "bootstrap": {
+    "defaultDocumentProvider": {
       "class": "Identifier",
-      "name": "bootstrap",
+      "name": "defaultDocumentProvider",
       "moduleUrl": "asset:angular2/lib/platform/browser.dart",
       "prefix": null,
       "value": null

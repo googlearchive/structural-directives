@@ -1,14 +1,16 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.forms.directives.number_value_accessor",
+    "1": "",
     "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
       {
         "1": "package:angular2/core.dart",
         "2": [
           "Directive",
           "ElementRef",
-          "Renderer",
-          "Self",
           "Provider"
         ],
         "5": false
@@ -16,16 +18,10 @@
       {
         "1": "control_value_accessor.dart",
         "2": [
+          "ChangeFunction",
+          "ControlValueAccessor",
           "NG_VALUE_ACCESSOR",
-          "ControlValueAccessor"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "isBlank",
-          "NumberWrapper"
+          "TouchFunction"
         ],
         "5": false
       }
@@ -34,10 +30,6 @@
       {
         "1": "NumberValueAccessor",
         "5": [
-          {
-            "1": "Renderer",
-            "4": "_renderer"
-          },
           {
             "1": "ElementRef",
             "4": "_elementRef"
@@ -51,16 +43,12 @@
     "6": "number_value_accessor.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "control_value_accessor.ngfactory.dart",
+        "1": "control_value_accessor.template.dart",
         "4": "i1"
-      },
-      {
-        "1": "package:angular2/src/facade/lang.ngfactory.dart",
-        "4": "i2"
       }
     ]
   },
@@ -100,28 +88,6 @@
                     "value": null,
                     "identifier": {
                       "class": "Identifier",
-                      "name": "Renderer",
-                      "moduleUrl": "asset:angular2/lib/src/core/render/api.dart",
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                },
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
                       "name": "ElementRef",
                       "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
                       "prefix": null,
@@ -129,8 +95,6 @@
                     },
                     "identifierIsInstance": false
                   },
-                  "query": null,
-                  "viewQuery": null,
                   "value": null,
                   "isAttribute": false,
                   "isSelf": false,
@@ -168,28 +132,6 @@
               "value": null,
               "identifier": {
                 "class": "Identifier",
-                "name": "Renderer",
-                "moduleUrl": "asset:angular2/lib/src/core/render/api.dart",
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": false,
-            "isValue": false
-          },
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
                 "name": "ElementRef",
                 "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
                 "prefix": null,
@@ -197,8 +139,6 @@
               },
               "identifierIsInstance": false
             },
-            "query": null,
-            "viewQuery": null,
             "value": null,
             "isAttribute": false,
             "isSelf": false,
@@ -209,12 +149,13 @@
           }
         ]
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {},
+      "inputTypes": {},
       "outputs": {},
       "hostListeners": {
         "input": "onChange($event.target.value)",
-        "blur": "onTouched()",
+        "blur": "touchHandler()",
         "change": "onChange($event.target.value)"
       },
       "hostProperties": {},
@@ -251,28 +192,6 @@
                     "value": null,
                     "identifier": {
                       "class": "Identifier",
-                      "name": "Renderer",
-                      "moduleUrl": "asset:angular2/lib/src/core/render/api.dart",
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                },
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
                       "name": "ElementRef",
                       "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
                       "prefix": null,
@@ -280,8 +199,6 @@
                     },
                     "identifierIsInstance": false
                   },
-                  "query": null,
-                  "viewQuery": null,
                   "value": null,
                   "isAttribute": false,
                   "isSelf": false,
@@ -303,6 +220,13 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
+    },
+    "_SimpleChangeFn": {
+      "class": "Identifier",
+      "name": "_SimpleChangeFn",
+      "moduleUrl": "asset:angular2/lib/src/common/forms/directives/number_value_accessor.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

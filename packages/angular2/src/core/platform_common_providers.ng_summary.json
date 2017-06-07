@@ -1,31 +1,18 @@
 {
   "ngDeps": {
-    "1": "angular2.src.core.platform_common_providers",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "application_ref.dart",
         "2": [
-          "Type",
-          "isBlank",
-          "isPresent",
-          "assertionsEnabled"
+          "PLATFORM_CORE_PROVIDERS"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/core/di.dart",
+        "1": "di.dart",
         "2": [
-          "provide",
-          "Provider",
-          "Injector",
-          "OpaqueToken"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/core/console.dart",
-        "2": [
-          "Console"
+          "Provider"
         ],
         "5": false
       },
@@ -38,23 +25,9 @@
         "5": false
       },
       {
-        "1": "reflection/reflector_reader.dart",
-        "2": [
-          "ReflectorReader"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/core/testability/testability.dart",
+        "1": "testability/testability.dart",
         "2": [
           "TestabilityRegistry"
-        ],
-        "5": false
-      },
-      {
-        "1": "application_ref.dart",
-        "2": [
-          "PLATFORM_CORE_PROVIDERS"
         ],
         "5": false
       }
@@ -93,7 +66,7 @@
           "useValue": null,
           "useFactory": {
             "class": "Factory",
-            "name": "_reflector",
+            "name": "reflectorFactory",
             "prefix": null,
             "moduleUrl": null,
             "value": null,
@@ -103,54 +76,17 @@
           "deps": []
         },
         {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "ReflectorReader",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "Reflector",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useValue": null,
-          "useFactory": null,
-          "multi": false,
-          "deps": null
-        },
-        {
           "class": "Identifier",
           "name": "TestabilityRegistry",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        },
-        {
-          "class": "Identifier",
-          "name": "Console",
           "moduleUrl": null,
           "prefix": null,
           "value": null
         }
       ]
     },
-    "_reflector": {
+    "reflectorFactory": {
       "class": "Identifier",
-      "name": "_reflector",
+      "name": "reflectorFactory",
       "moduleUrl": "asset:angular2/lib/src/core/platform_common_providers.dart",
       "prefix": null,
       "value": null

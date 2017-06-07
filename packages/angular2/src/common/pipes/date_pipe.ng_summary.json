@@ -1,50 +1,17 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.pipes.date_pipe",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "isDate",
-          "isNumber",
-          "isPresent",
-          "DateTime",
-          "DateWrapper",
-          "isBlank",
-          "FunctionWrapper"
-        ],
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/intl.dart",
-        "2": [
-          "DateFormatter"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/core.dart",
-        "2": [
-          "PipeTransform",
-          "WrappedValue",
-          "Pipe",
-          "Injectable"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/facade/collection.dart",
-        "2": [
-          "StringMapWrapper",
-          "ListWrapper"
-        ],
+        "1": "package:intl/intl.dart",
         "5": false
       },
       {
         "1": "invalid_pipe_argument_exception.dart",
-        "2": [
-          "InvalidPipeArgumentException"
-        ],
         "5": false
       }
     ],
@@ -54,11 +21,10 @@
         "4": [
           {
             "1": "Pipe",
+            "2": [
+              "\"date\""
+            ],
             "3": [
-              {
-                "1": "name",
-                "2": "\"date\""
-              },
               {
                 "1": "pure",
                 "2": "true"
@@ -92,6 +58,20 @@
       },
       "name": "date",
       "pure": true
+    },
+    "_formatDate": {
+      "class": "Identifier",
+      "name": "_formatDate",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/date_pipe.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_normalizeLocale": {
+      "class": "Identifier",
+      "name": "_normalizeLocale",
+      "moduleUrl": "asset:angular2/lib/src/common/pipes/date_pipe.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

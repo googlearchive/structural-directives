@@ -1,6 +1,6 @@
 {
   "ngDeps": {
-    "1": "angular2.transform.directive_metadata_linker.linker",
+    "1": "",
     "3": [
       {
         "1": "dart:async",
@@ -46,39 +46,46 @@
     "6": "ng_meta_linker.dart",
     "7": [
       {
-        "1": "package:angular2/src/compiler/compile_metadata.ngfactory.dart",
+        "1": "package:angular2/src/compiler/compile_metadata.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:angular2/src/transform/common/asset_reader.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/asset_reader.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular2/src/transform/common/logging.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/logging.template.dart",
         "4": "i2"
       },
       {
-        "1": "package:angular2/src/transform/common/names.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/names.template.dart",
         "4": "i3"
       },
       {
-        "1": "package:angular2/src/transform/common/ng_meta.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/ng_meta.template.dart",
         "4": "i4"
       },
       {
-        "1": "package:angular2/src/transform/common/url_resolver.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/url_resolver.template.dart",
         "4": "i5"
       },
       {
-        "1": "ng_deps_linker.ngfactory.dart",
+        "1": "ng_deps_linker.template.dart",
         "4": "i6"
       }
     ]
   },
   "type": {
-    "linkDirectiveMetadata": {
+    "_Linker": {
       "class": "Identifier",
-      "name": "linkDirectiveMetadata",
+      "name": "_Linker",
+      "moduleUrl": "asset:angular2/lib/src/transform/directive_metadata_linker/ng_meta_linker.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_NgMetaIdentifierResolver": {
+      "class": "Identifier",
+      "name": "_NgMetaIdentifierResolver",
       "moduleUrl": "asset:angular2/lib/src/transform/directive_metadata_linker/ng_meta_linker.dart",
       "prefix": null,
       "value": null
@@ -90,16 +97,9 @@
       "prefix": null,
       "value": null
     },
-    "_Linker": {
+    "linkDirectiveMetadata": {
       "class": "Identifier",
-      "name": "_Linker",
-      "moduleUrl": "asset:angular2/lib/src/transform/directive_metadata_linker/ng_meta_linker.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_NgMetaIdentifierResolver": {
-      "class": "Identifier",
-      "name": "_NgMetaIdentifierResolver",
+      "name": "linkDirectiveMetadata",
       "moduleUrl": "asset:angular2/lib/src/transform/directive_metadata_linker/ng_meta_linker.dart",
       "prefix": null,
       "value": null

@@ -1,6 +1,6 @@
 {
   "ngDeps": {
-    "1": "angular2.transform.common.code.import_export_code",
+    "1": "",
     "3": [
       {
         "1": "package:analyzer/analyzer.dart",
@@ -11,34 +11,41 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/transform/common/names.dart",
+        "1": "package:angular2/src/transform/common/model/import_export_model.pb.dart",
         "5": false
       },
       {
-        "1": "package:angular2/src/transform/common/model/import_export_model.pb.dart",
+        "1": "package:angular2/src/transform/common/names.dart",
         "5": false
       }
     ],
     "6": "import_export_code.dart",
     "7": [
       {
-        "1": "package:angular2/src/transform/common/mirror_matcher.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/mirror_matcher.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:angular2/src/transform/common/names.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/model/import_export_model.pb.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular2/src/transform/common/model/import_export_model.pb.ngfactory.dart",
+        "1": "package:angular2/src/transform/common/names.template.dart",
         "4": "i2"
       }
     ]
   },
   "type": {
-    "_mirrorMatcher": {
+    "ExportVisitor": {
       "class": "Identifier",
-      "name": "_mirrorMatcher",
+      "name": "ExportVisitor",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ExportWriterMixin": {
+      "class": "Identifier",
+      "name": "ExportWriterMixin",
       "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
       "prefix": null,
       "value": null
@@ -50,16 +57,16 @@
       "prefix": null,
       "value": null
     },
-    "ExportVisitor": {
+    "ImportWriterMixin": {
       "class": "Identifier",
-      "name": "ExportVisitor",
+      "name": "ImportWriterMixin",
       "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
       "prefix": null,
       "value": null
     },
-    "_updateIfBootstrap": {
+    "_mirrorMatcher": {
       "class": "Identifier",
-      "name": "_updateIfBootstrap",
+      "name": "_mirrorMatcher",
       "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
       "prefix": null,
       "value": null
@@ -71,16 +78,9 @@
       "prefix": null,
       "value": null
     },
-    "ImportWriterMixin": {
+    "_updateIfBootstrap": {
       "class": "Identifier",
-      "name": "ImportWriterMixin",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
-      "prefix": null,
-      "value": null
-    },
-    "ExportWriterMixin": {
-      "class": "Identifier",
-      "name": "ExportWriterMixin",
+      "name": "_updateIfBootstrap",
       "moduleUrl": "asset:angular2/lib/src/transform/common/code/import_export_code.dart",
       "prefix": null,
       "value": null

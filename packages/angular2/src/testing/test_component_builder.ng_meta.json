@@ -1,24 +1,13 @@
 {
   "ngDeps": {
-    "1": "angular2.src.testing.test_component_builder",
+    "1": "",
     "3": [
       {
         "1": "dart:async",
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
-        "2": [
-          "ComponentRef",
-          "DynamicComponentLoader",
-          "Injector",
-          "Injectable",
-          "ViewMetadata",
-          "ElementRef",
-          "EmbeddedViewRef",
-          "ChangeDetectorRef",
-          "provide"
-        ],
+        "1": "dart:html",
         "5": false
       },
       {
@@ -30,33 +19,37 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "package:angular2/core.dart",
         "2": [
-          "Type",
-          "isPresent",
-          "isBlank"
+          "ComponentRef",
+          "DynamicComponentLoader",
+          "Injector",
+          "View",
+          "ElementRef",
+          "ChangeDetectorRef"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/async.dart",
+        "1": "package:angular2/di.dart",
         "2": [
-          "PromiseWrapper"
+          "Injectable"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/collection.dart",
-        "2": [
-          "ListWrapper",
-          "MapWrapper"
-        ],
+        "1": "package:angular2/platform/common_dom.dart",
         "5": false
       },
       {
-        "1": "utils.dart",
+        "1": "package:angular2/src/core/linker/app_view_utils.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/debug/debug_node.dart",
         "2": [
-          "el"
+          "DebugElement",
+          "getDebugNode"
         ],
         "5": false
       },
@@ -68,19 +61,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/platform/dom/dom_adapter.dart",
-        "2": [
-          "DOM"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/core/debug/debug_node.dart",
-        "2": [
-          "DebugNode",
-          "DebugElement",
-          "getDebugNode"
-        ],
+        "1": "package:angular2/src/platform/dom/shared_styles_host.dart",
         "5": false
       },
       {
@@ -111,44 +92,40 @@
     "6": "test_component_builder.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/compiler.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:angular2/compiler.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular2/src/facade/lang.ngfactory.dart",
+        "1": "package:angular2/di.template.dart",
         "4": "i2"
       },
       {
-        "1": "package:angular2/src/facade/async.ngfactory.dart",
+        "1": "package:angular2/platform/common_dom.template.dart",
         "4": "i3"
       },
       {
-        "1": "package:angular2/src/facade/collection.ngfactory.dart",
+        "1": "package:angular2/src/core/linker/app_view_utils.template.dart",
         "4": "i4"
       },
       {
-        "1": "utils.ngfactory.dart",
+        "1": "package:angular2/src/debug/debug_node.template.dart",
         "4": "i5"
       },
       {
-        "1": "package:angular2/src/platform/dom/dom_tokens.ngfactory.dart",
+        "1": "package:angular2/src/platform/dom/dom_tokens.template.dart",
         "4": "i6"
       },
       {
-        "1": "package:angular2/src/platform/dom/dom_adapter.ngfactory.dart",
+        "1": "package:angular2/src/platform/dom/shared_styles_host.template.dart",
         "4": "i7"
       },
       {
-        "1": "package:angular2/src/core/debug/debug_node.ngfactory.dart",
+        "1": "fake_async.template.dart",
         "4": "i8"
-      },
-      {
-        "1": "fake_async.ngfactory.dart",
-        "4": "i9"
       }
     ]
   },
@@ -180,8 +157,6 @@
             },
             "identifierIsInstance": false
           },
-          "query": null,
-          "viewQuery": null,
           "value": null,
           "isAttribute": false,
           "isSelf": false,

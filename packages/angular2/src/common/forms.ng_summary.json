@@ -1,14 +1,7 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.forms",
+    "1": "",
     "3": [
-      {
-        "1": "forms/form_builder.dart",
-        "2": [
-          "FormBuilder"
-        ],
-        "5": false
-      },
       {
         "1": "forms/directives/radio_control_value_accessor.dart",
         "2": [
@@ -17,21 +10,19 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "forms/form_builder.dart",
         "2": [
-          "Type"
+          "FormBuilder"
         ],
         "5": false
       }
     ],
     "4": [
       {
-        "1": "forms/model.dart",
+        "1": "forms/directives.dart",
         "2": [
-          "AbstractControl",
-          "Control",
-          "ControlGroup",
-          "ControlArray"
+          "FORM_DIRECTIVES",
+          "RadioButtonState"
         ]
       },
       {
@@ -41,9 +32,9 @@
         ]
       },
       {
-        "1": "forms/directives/form_interface.dart",
+        "1": "forms/directives/checkbox_value_accessor.dart",
         "2": [
-          "Form"
+          "CheckboxControlValueAccessor"
         ]
       },
       {
@@ -53,21 +44,24 @@
         ]
       },
       {
-        "1": "forms/directives/ng_control_name.dart",
+        "1": "forms/directives/control_value_accessor.dart",
         "2": [
-          "NgControlName"
+          "ControlValueAccessor",
+          "TouchFunction",
+          "ChangeFunction",
+          "NG_VALUE_ACCESSOR"
         ]
       },
       {
-        "1": "forms/directives/ng_form_control.dart",
+        "1": "forms/directives/default_value_accessor.dart",
         "2": [
-          "NgFormControl"
+          "DefaultValueAccessor"
         ]
       },
       {
-        "1": "forms/directives/ng_model.dart",
+        "1": "forms/directives/form_interface.dart",
         "2": [
-          "NgModel"
+          "Form"
         ]
       },
       {
@@ -83,28 +77,9 @@
         ]
       },
       {
-        "1": "forms/directives/ng_form_model.dart",
+        "1": "forms/directives/ng_control_name.dart",
         "2": [
-          "NgFormModel"
-        ]
-      },
-      {
-        "1": "forms/directives/ng_form.dart",
-        "2": [
-          "NgForm"
-        ]
-      },
-      {
-        "1": "forms/directives/control_value_accessor.dart",
-        "2": [
-          "ControlValueAccessor",
-          "NG_VALUE_ACCESSOR"
-        ]
-      },
-      {
-        "1": "forms/directives/default_value_accessor.dart",
-        "2": [
-          "DefaultValueAccessor"
+          "NgControlName"
         ]
       },
       {
@@ -114,9 +89,27 @@
         ]
       },
       {
-        "1": "forms/directives/checkbox_value_accessor.dart",
+        "1": "forms/directives/ng_form.dart",
         "2": [
-          "CheckboxControlValueAccessor"
+          "NgForm"
+        ]
+      },
+      {
+        "1": "forms/directives/ng_form_control.dart",
+        "2": [
+          "NgFormControl"
+        ]
+      },
+      {
+        "1": "forms/directives/ng_form_model.dart",
+        "2": [
+          "NgFormModel"
+        ]
+      },
+      {
+        "1": "forms/directives/ng_model.dart",
+        "2": [
+          "NgModel"
         ]
       },
       {
@@ -127,18 +120,9 @@
         ]
       },
       {
-        "1": "forms/directives.dart",
+        "1": "forms/directives/shared.dart",
         "2": [
-          "FORM_DIRECTIVES",
-          "RadioButtonState"
-        ]
-      },
-      {
-        "1": "forms/validators.dart",
-        "2": [
-          "NG_VALIDATORS",
-          "NG_ASYNC_VALIDATORS",
-          "Validators"
+          "composeValidators"
         ]
       },
       {
@@ -148,7 +132,8 @@
           "MinLengthValidator",
           "MaxLengthValidator",
           "PatternValidator",
-          "Validator"
+          "Validator",
+          "ValidatorFn"
         ]
       },
       {
@@ -156,11 +141,34 @@
         "2": [
           "FormBuilder"
         ]
+      },
+      {
+        "1": "forms/model.dart",
+        "2": [
+          "AbstractControl",
+          "Control",
+          "ControlGroup",
+          "ControlArray"
+        ]
+      },
+      {
+        "1": "forms/validators.dart",
+        "2": [
+          "NG_VALIDATORS",
+          "Validators"
+        ]
       }
     ],
     "6": "forms.dart"
   },
   "type": {
+    "FORM_BINDINGS": {
+      "class": "Identifier",
+      "name": "FORM_BINDINGS",
+      "moduleUrl": "asset:angular2/lib/src/common/forms.dart",
+      "prefix": null,
+      "value": null
+    },
     "FORM_PROVIDERS": {
       "class": "Identifier",
       "name": "FORM_PROVIDERS",
@@ -182,13 +190,6 @@
           "value": null
         }
       ]
-    },
-    "FORM_BINDINGS": {
-      "class": "Identifier",
-      "name": "FORM_BINDINGS",
-      "moduleUrl": "asset:angular2/lib/src/common/forms.dart",
-      "prefix": null,
-      "value": null
     }
   },
   "alias": {

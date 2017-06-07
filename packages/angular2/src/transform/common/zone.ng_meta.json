@@ -1,6 +1,6 @@
 {
   "ngDeps": {
-    "1": "angular2.src.transform.common.zone",
+    "1": "",
     "3": [
       {
         "1": "dart:async",
@@ -11,7 +11,15 @@
         "5": false
       },
       {
+        "1": "package:angular2/src/compiler/offline_compiler.dart",
+        "5": false
+      },
+      {
         "1": "package:barback/barback.dart",
+        "5": false
+      },
+      {
+        "1": "package:logging/logging.dart",
         "5": false
       },
       {
@@ -19,15 +27,22 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/compiler/offline_compiler.dart",
+        "1": "logging.dart",
+        "2": [
+          "forwardLogRecord"
+        ],
         "5": false
       }
     ],
     "6": "zone.dart",
     "7": [
       {
-        "1": "package:angular2/src/compiler/offline_compiler.ngfactory.dart",
+        "1": "package:angular2/src/compiler/offline_compiler.template.dart",
         "4": "i0"
+      },
+      {
+        "1": "logging.template.dart",
+        "4": "i1"
       }
     ]
   },
@@ -35,6 +50,13 @@
     "_SimpleCallback": {
       "class": "Identifier",
       "name": "_SimpleCallback",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/zone.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_friendlyError": {
+      "class": "Identifier",
+      "name": "_friendlyError",
       "moduleUrl": "asset:angular2/lib/src/transform/common/zone.dart",
       "prefix": null,
       "value": null
@@ -56,13 +78,6 @@
     "templateCompiler": {
       "class": "Identifier",
       "name": "templateCompiler",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/zone.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_friendlyError": {
-      "class": "Identifier",
-      "name": "_friendlyError",
       "moduleUrl": "asset:angular2/lib/src/transform/common/zone.dart",
       "prefix": null,
       "value": null

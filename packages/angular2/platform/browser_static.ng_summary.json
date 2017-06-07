@@ -7,21 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "Type",
-          "isPresent",
-          "isBlank"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/platform/browser_common.dart",
-        "2": [
-          "BROWSER_PROVIDERS",
-          "BROWSER_APP_COMMON_PROVIDERS",
-          "BROWSER_PLATFORM_MARKER"
-        ],
+        "1": "dart:html",
         "5": false
       },
       {
@@ -33,7 +19,52 @@
           "PlatformRef",
           "getPlatform",
           "createPlatform",
-          "assertPlatform"
+          "PLATFORM_INITIALIZER",
+          "Injector"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/application_ref.dart",
+        "2": [
+          "PlatformRefImpl"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/di.dart",
+        "2": [
+          "Provider"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/reflection/reflection.dart",
+        "2": [
+          "Reflector",
+          "reflector"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/core/testability/testability.dart",
+        "2": [
+          "TestabilityRegistry"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/platform/browser_common.dart",
+        "2": [
+          "BROWSER_APP_COMMON_PROVIDERS",
+          "createInitDomAdapter"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/platform/dom/dom_tokens.dart",
+        "2": [
+          "DOCUMENT"
         ],
         "5": false
       }
@@ -46,12 +77,6 @@
         "1": "package:angular2/src/platform/browser_common.dart",
         "2": [
           "BROWSER_PROVIDERS",
-          "ELEMENT_PROBE_PROVIDERS",
-          "ELEMENT_PROBE_PROVIDERS_PROD_MODE",
-          "inspectNativeElement",
-          "BrowserDomAdapter",
-          "By",
-          "Title",
           "enableDebugTools",
           "disableDebugTools"
         ]
@@ -65,6 +90,48 @@
       "name": "BROWSER_APP_PROVIDERS",
       "moduleUrl": "asset:angular2/lib/platform/browser_static.dart",
       "prefix": null,
+      "value": [
+        {
+          "class": "Identifier",
+          "name": "BROWSER_APP_COMMON_PROVIDERS",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "DOCUMENT",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": {
+            "class": "Factory",
+            "name": "createDoc",
+            "prefix": null,
+            "moduleUrl": null,
+            "value": null,
+            "diDeps": []
+          },
+          "multi": false,
+          "deps": []
+        }
+      ]
+    },
+    "bootstrapStatic": {
+      "class": "Identifier",
+      "name": "bootstrapStatic",
+      "moduleUrl": "asset:angular2/lib/platform/browser_static.dart",
+      "prefix": null,
       "value": null
     },
     "browserStaticPlatform": {
@@ -74,9 +141,9 @@
       "prefix": null,
       "value": null
     },
-    "bootstrapStatic": {
+    "createDoc": {
       "class": "Identifier",
-      "name": "bootstrapStatic",
+      "name": "createDoc",
       "moduleUrl": "asset:angular2/lib/platform/browser_static.dart",
       "prefix": null,
       "value": null

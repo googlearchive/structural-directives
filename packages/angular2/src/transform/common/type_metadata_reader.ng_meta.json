@@ -1,6 +1,6 @@
 {
   "ngDeps": {
-    "1": "angular2.transform.common.type_metadata_reader",
+    "1": "",
     "3": [
       {
         "1": "dart:async",
@@ -37,22 +37,26 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/transform/common/annotation_matcher.dart",
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/transform/common/interface_matcher.dart",
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/transform/common/logging.dart",
-        "5": false
-      },
-      {
         "1": "package:barback/barback.dart",
         "2": [
           "AssetId"
         ],
+        "5": false
+      },
+      {
+        "1": "package:logging/logging.dart",
+        "5": false
+      },
+      {
+        "1": "annotation_matcher.dart",
+        "5": false
+      },
+      {
+        "1": "interface_matcher.dart",
+        "5": false
+      },
+      {
+        "1": "logging.dart",
         "5": false
       },
       {
@@ -67,43 +71,43 @@
     "6": "type_metadata_reader.dart",
     "7": [
       {
-        "1": "package:angular2/src/compiler/compile_metadata.ngfactory.dart",
+        "1": "package:angular2/src/compiler/compile_metadata.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:angular2/src/compiler/offline_compiler.ngfactory.dart",
+        "1": "package:angular2/src/compiler/offline_compiler.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular2/src/core/change_detection/change_detection.ngfactory.dart",
+        "1": "package:angular2/src/core/change_detection/change_detection.template.dart",
         "4": "i2"
       },
       {
-        "1": "package:angular2/src/core/metadata/lifecycle_hooks.ngfactory.dart",
+        "1": "package:angular2/src/core/metadata/lifecycle_hooks.template.dart",
         "4": "i3"
       },
       {
-        "1": "package:angular2/src/core/metadata/view.ngfactory.dart",
+        "1": "package:angular2/src/core/metadata/view.template.dart",
         "4": "i4"
       },
       {
-        "1": "package:angular2/src/transform/common/annotation_matcher.ngfactory.dart",
+        "1": "annotation_matcher.template.dart",
         "4": "i5"
       },
       {
-        "1": "package:angular2/src/transform/common/interface_matcher.ngfactory.dart",
+        "1": "interface_matcher.template.dart",
         "4": "i6"
       },
       {
-        "1": "package:angular2/src/transform/common/logging.ngfactory.dart",
+        "1": "logging.template.dart",
         "4": "i7"
       },
       {
-        "1": "naive_eval.ngfactory.dart",
+        "1": "naive_eval.template.dart",
         "4": "i8"
       },
       {
-        "1": "url_resolver.ngfactory.dart",
+        "1": "url_resolver.template.dart",
         "4": "i9"
       }
     ]
@@ -116,30 +120,16 @@
       "prefix": null,
       "value": null
     },
-    "_populateMap": {
+    "_CompileFactoryMetadataVisitor": {
       "class": "Identifier",
-      "name": "_populateMap",
+      "name": "_CompileFactoryMetadataVisitor",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
     },
-    "_populateList": {
+    "_CompileTemplateMetadataVisitor": {
       "class": "Identifier",
-      "name": "_populateList",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_expressionToString": {
-      "class": "Identifier",
-      "name": "_expressionToString",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_expressionToBool": {
-      "class": "Identifier",
-      "name": "_expressionToBool",
+      "name": "_CompileTemplateMetadataVisitor",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -151,9 +141,9 @@
       "prefix": null,
       "value": null
     },
-    "_CompileFactoryMetadataVisitor": {
+    "_ComponentMixinVisitor": {
       "class": "Identifier",
-      "name": "_CompileFactoryMetadataVisitor",
+      "name": "_ComponentMixinVisitor",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -172,13 +162,6 @@
       "prefix": null,
       "value": null
     },
-    "_CompileTemplateMetadataVisitor": {
-      "class": "Identifier",
-      "name": "_CompileTemplateMetadataVisitor",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
-      "prefix": null,
-      "value": null
-    },
     "_PipeMetadataVisitor": {
       "class": "Identifier",
       "name": "_PipeMetadataVisitor",
@@ -186,23 +169,9 @@
       "prefix": null,
       "value": null
     },
-    "_readProviders": {
+    "_componentStateClassName": {
       "class": "Identifier",
-      "name": "_readProviders",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_readProvider": {
-      "class": "Identifier",
-      "name": "_readProvider",
-      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
-      "prefix": null,
-      "value": null
-    },
-    "_readDeps": {
-      "class": "Identifier",
-      "name": "_readDeps",
+      "name": "_componentStateClassName",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -214,9 +183,16 @@
       "prefix": null,
       "value": null
     },
-    "_getCompileDiDependencyMetadata": {
+    "_expressionToBool": {
       "class": "Identifier",
-      "name": "_getCompileDiDependencyMetadata",
+      "name": "_expressionToBool",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_expressionToString": {
+      "class": "Identifier",
+      "name": "_expressionToString",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -224,6 +200,13 @@
     "_getAnnotation": {
       "class": "Identifier",
       "name": "_getAnnotation",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_getCompileDiDependencyMetadata": {
+      "class": "Identifier",
+      "name": "_getCompileDiDependencyMetadata",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -242,9 +225,51 @@
       "prefix": null,
       "value": null
     },
+    "_populateList": {
+      "class": "Identifier",
+      "name": "_populateList",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_populateMap": {
+      "class": "Identifier",
+      "name": "_populateMap",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_readDeps": {
+      "class": "Identifier",
+      "name": "_readDeps",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
     "_readIdentifier": {
       "class": "Identifier",
       "name": "_readIdentifier",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_readProvider": {
+      "class": "Identifier",
+      "name": "_readProvider",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_readProviders": {
+      "class": "Identifier",
+      "name": "_readProviders",
+      "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_readToken": {
+      "class": "Identifier",
+      "name": "_readToken",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null
@@ -256,9 +281,9 @@
       "prefix": null,
       "value": null
     },
-    "_readToken": {
+    "_reportDeprecation": {
       "class": "Identifier",
-      "name": "_readToken",
+      "name": "_reportDeprecation",
       "moduleUrl": "asset:angular2/lib/src/transform/common/type_metadata_reader.dart",
       "prefix": null,
       "value": null

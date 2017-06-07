@@ -1,21 +1,11 @@
 {
   "ngDeps": {
-    "1": "angular2.src.core.application_common_providers",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "application_ref.dart",
         "2": [
-          "Type"
-        ],
-        "5": false
-      },
-      {
-        "1": "package:angular2/src/core/di.dart",
-        "2": [
-          "provide",
-          "Provider",
-          "Injector",
-          "OpaqueToken"
+          "APPLICATION_CORE_PROVIDERS"
         ],
         "5": false
       },
@@ -27,33 +17,29 @@
         "5": false
       },
       {
-        "1": "application_ref.dart",
+        "1": "di.dart",
         "2": [
-          "APPLICATION_CORE_PROVIDERS"
+          "Provider"
         ],
         "5": false
       },
       {
-        "1": "change_detection/change_detection.dart",
+        "1": "linker/app_view_utils.dart",
         "2": [
-          "IterableDiffers",
-          "defaultIterableDiffers",
-          "KeyValueDiffers",
-          "defaultKeyValueDiffers"
-        ],
-        "5": false
-      },
-      {
-        "1": "linker/view_utils.dart",
-        "2": [
-          "ViewUtils"
+          "AppViewUtils"
         ],
         "5": false
       },
       {
         "1": "linker/component_resolver.dart",
         "2": [
-          "ComponentResolver",
+          "ComponentResolver"
+        ],
+        "5": false
+      },
+      {
+        "1": "linker/component_resolver.dart",
+        "2": [
           "ReflectorComponentResolver"
         ],
         "5": false
@@ -61,8 +47,14 @@
       {
         "1": "linker/dynamic_component_loader.dart",
         "2": [
-          "DynamicComponentLoader",
-          "DynamicComponentLoader_"
+          "DynamicComponentLoader"
+        ],
+        "5": false
+      },
+      {
+        "1": "linker/dynamic_component_loader.dart",
+        "2": [
+          "DynamicComponentLoaderImpl"
         ],
         "5": false
       }
@@ -120,62 +112,10 @@
         },
         {
           "class": "Identifier",
-          "name": "ViewUtils",
+          "name": "AppViewUtils",
           "moduleUrl": null,
           "prefix": null,
           "value": null
-        },
-        {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "IterableDiffers",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": null,
-          "useValue": {
-            "class": "Identifier",
-            "name": "defaultIterableDiffers",
-            "moduleUrl": null,
-            "prefix": null,
-            "value": null
-          },
-          "useFactory": null,
-          "multi": false,
-          "deps": null
-        },
-        {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "KeyValueDiffers",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": null,
-          "useValue": {
-            "class": "Identifier",
-            "name": "defaultKeyValueDiffers",
-            "moduleUrl": null,
-            "prefix": null,
-            "value": null
-          },
-          "useFactory": null,
-          "multi": false,
-          "deps": null
         },
         {
           "class": "Provider",
@@ -192,7 +132,7 @@
           },
           "useClass": {
             "class": "Type",
-            "name": "DynamicComponentLoader_",
+            "name": "DynamicComponentLoaderImpl",
             "moduleUrl": null,
             "prefix": null,
             "isHost": false,

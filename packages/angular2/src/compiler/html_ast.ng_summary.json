@@ -1,19 +1,9 @@
 {
   "ngDeps": {
-    "1": "angular2.src.compiler.html_ast",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
-        "2": [
-          "isPresent"
-        ],
-        "5": false
-      },
-      {
-        "1": "parse_util.dart",
-        "2": [
-          "ParseSourceSpan"
-        ],
+        "1": "package:source_span/source_span.dart",
         "5": false
       }
     ],
@@ -27,23 +17,9 @@
       "prefix": null,
       "value": null
     },
-    "HtmlTextAst": {
+    "HtmlAstVisitor": {
       "class": "Identifier",
-      "name": "HtmlTextAst",
-      "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
-      "prefix": null,
-      "value": null
-    },
-    "HtmlExpansionAst": {
-      "class": "Identifier",
-      "name": "HtmlExpansionAst",
-      "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
-      "prefix": null,
-      "value": null
-    },
-    "HtmlExpansionCaseAst": {
-      "class": "Identifier",
-      "name": "HtmlExpansionCaseAst",
+      "name": "HtmlAstVisitor",
       "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
       "prefix": null,
       "value": null
@@ -55,13 +31,6 @@
       "prefix": null,
       "value": null
     },
-    "HtmlElementAst": {
-      "class": "Identifier",
-      "name": "HtmlElementAst",
-      "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
-      "prefix": null,
-      "value": null
-    },
     "HtmlCommentAst": {
       "class": "Identifier",
       "name": "HtmlCommentAst",
@@ -69,9 +38,16 @@
       "prefix": null,
       "value": null
     },
-    "HtmlAstVisitor": {
+    "HtmlElementAst": {
       "class": "Identifier",
-      "name": "HtmlAstVisitor",
+      "name": "HtmlElementAst",
+      "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
+      "prefix": null,
+      "value": null
+    },
+    "HtmlTextAst": {
+      "class": "Identifier",
+      "name": "HtmlTextAst",
       "moduleUrl": "asset:angular2/lib/src/compiler/html_ast.dart",
       "prefix": null,
       "value": null

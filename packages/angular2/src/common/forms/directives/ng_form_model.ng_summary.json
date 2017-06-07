@@ -1,19 +1,37 @@
 {
   "ngDeps": {
-    "1": "angular2.src.common.forms.directives.ng_form_model",
+    "1": "",
     "3": [
       {
-        "1": "package:angular2/src/facade/lang.dart",
+        "1": "dart:html",
         "2": [
-          "isBlank"
+          "Event"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/collection.dart",
+        "1": "package:angular2/core.dart",
         "2": [
-          "ListWrapper",
-          "StringMapWrapper"
+          "SimpleChange",
+          "OnChanges",
+          "Directive",
+          "Provider"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/di.dart",
+        "2": [
+          "Optional",
+          "Inject",
+          "Self"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/facade/async.dart",
+        "2": [
+          "EventEmitter"
         ],
         "5": false
       },
@@ -25,37 +43,18 @@
         "5": false
       },
       {
-        "1": "package:angular2/src/facade/async.dart",
+        "1": "../model.dart",
         "2": [
-          "ObservableWrapper",
-          "EventEmitter"
+          "Control",
+          "ControlGroup"
         ],
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "../validators.dart",
         "2": [
-          "SimpleChange",
-          "OnChanges",
-          "Directive",
-          "Provider",
-          "Inject",
-          "Optional",
-          "Self"
-        ],
-        "5": false
-      },
-      {
-        "1": "ng_control.dart",
-        "2": [
-          "NgControl"
-        ],
-        "5": false
-      },
-      {
-        "1": "ng_control_group.dart",
-        "2": [
-          "NgControlGroup"
+          "Validators",
+          "NG_VALIDATORS"
         ],
         "5": false
       },
@@ -74,11 +73,14 @@
         "5": false
       },
       {
-        "1": "../model.dart",
+        "1": "ng_control.dart",
         "2": [
-          "Control",
-          "ControlGroup"
+          "NgControl"
         ],
+        "5": false
+      },
+      {
+        "1": "ng_control_group.dart",
         "5": false
       },
       {
@@ -86,17 +88,7 @@
         "2": [
           "setUpControl",
           "setUpControlGroup",
-          "composeValidators",
-          "composeAsyncValidators"
-        ],
-        "5": false
-      },
-      {
-        "1": "../validators.dart",
-        "2": [
-          "Validators",
-          "NG_VALIDATORS",
-          "NG_ASYNC_VALIDATORS"
+          "composeValidators"
         ],
         "5": false
       }
@@ -114,16 +106,6 @@
               "const Inject(NG_VALIDATORS)"
             ],
             "4": "_validators"
-          },
-          {
-            "1": "List",
-            "2": "<dynamic>",
-            "3": [
-              "const Optional()",
-              "const Self()",
-              "const Inject(NG_ASYNC_VALIDATORS)"
-            ],
-            "4": "_asyncValidators"
           }
         ],
         "6": [
@@ -135,6 +117,72 @@
     "6": "ng_form_model.dart"
   },
   "type": {
+    "NgFormModel": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "[ngFormModel]",
+      "exportAs": "ngForm",
+      "type": {
+        "class": "Type",
+        "name": "NgFormModel",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_form_model.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "NG_VALIDATORS",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": true,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "form": "ngFormModel"
+      },
+      "inputTypes": {},
+      "outputs": {
+        "ngSubmit": "ngSubmit",
+        "ngBeforeSubmit": "ngBeforeSubmit"
+      },
+      "hostListeners": {
+        "submit": "onSubmit($event)"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        3
+      ],
+      "template": null,
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "formDirectiveProvider",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
     "formDirectiveProvider": {
       "class": "Identifier",
       "name": "formDirectiveProvider",
@@ -170,94 +218,6 @@
         "multi": false,
         "deps": null
       }
-    },
-    "NgFormModel": {
-      "class": "Directive",
-      "isComponent": false,
-      "selector": "[ngFormModel]",
-      "exportAs": "ngForm",
-      "type": {
-        "class": "Type",
-        "name": "NgFormModel",
-        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_form_model.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": [
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "NG_VALIDATORS",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": true,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": true,
-            "isValue": false
-          },
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "NG_ASYNC_VALIDATORS",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": true,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": true,
-            "isValue": false
-          }
-        ]
-      },
-      "changeDetection": 5,
-      "inputs": {
-        "form": "ngFormModel"
-      },
-      "outputs": {
-        "ngSubmit": "ngSubmit"
-      },
-      "hostListeners": {
-        "submit": "onSubmit()"
-      },
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [
-        3
-      ],
-      "template": null,
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "formDirectiveProvider",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
     }
   },
   "alias": {}

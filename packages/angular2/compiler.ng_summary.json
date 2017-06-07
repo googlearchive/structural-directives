@@ -3,14 +3,12 @@
     "1": "angular2.compiler",
     "4": [
       {
-        "1": "package:angular2/src/compiler/compiler.dart",
+        "1": "src/compiler/compiler.dart",
         "2": [
           "PLATFORM_DIRECTIVES",
           "PLATFORM_PIPES",
           "COMPILER_PROVIDERS",
-          "TEMPLATE_TRANSFORMS",
           "CompilerConfig",
-          "RenderTypes",
           "UrlResolver",
           "DEFAULT_PACKAGE_URL_PROVIDER",
           "createOfflineCompileUrlResolver",
@@ -36,7 +34,10 @@
         ]
       },
       {
-        "1": "package:angular2/src/compiler/template_ast.dart"
+        "1": "src/compiler/template_ast.dart"
+      },
+      {
+        "1": "src/compiler/view_compiler/parse_utils.dart"
       }
     ],
     "6": "compiler.dart"
