@@ -22,13 +22,7 @@
         ]
       }
     ],
-    "6": "unless_directive.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "unless_directive.dart"
   },
   "type": {
     "UnlessDirective": {
@@ -39,7 +33,7 @@
       "type": {
         "class": "Type",
         "name": "UnlessDirective",
-        "moduleUrl": "asset:structural_directives/lib/unless_directive.dart",
+        "moduleUrl": "asset:structural_directives/lib/src/unless_directive.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -50,7 +44,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "TemplateRef",
-                "moduleUrl": "asset:angular2/lib/src/core/linker/template_ref.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },
@@ -70,7 +64,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "ViewContainerRef",
-                "moduleUrl": "asset:angular2/lib/src/core/linker/view_container_ref.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },

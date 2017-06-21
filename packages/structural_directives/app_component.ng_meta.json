@@ -11,15 +11,15 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "src/hero.dart",
         "5": false
       },
       {
-        "1": "unless_directive.dart",
+        "1": "src/unless_directive.dart",
         "5": false
       },
       {
-        "1": "hero_switch_components.dart",
+        "1": "src/hero_switch_components.dart",
         "5": false
       }
     ],
@@ -53,15 +53,15 @@
         "4": "i1"
       },
       {
-        "1": "hero.template.dart",
+        "1": "src/hero.template.dart",
         "4": "i2"
       },
       {
-        "1": "unless_directive.template.dart",
+        "1": "src/unless_directive.template.dart",
         "4": "i3"
       },
       {
-        "1": "hero_switch_components.template.dart",
+        "1": "src/hero_switch_components.template.dart",
         "4": "i4"
       }
     ]
