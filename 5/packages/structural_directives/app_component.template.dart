@@ -13,7 +13,6 @@ import 'package:angular_components/angular_components.dart';
 import 'src/hero.dart';
 import 'src/unless_directive.dart';
 import 'src/hero_switch_components.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/angular_components.template.dart' as _ref1;
@@ -21,7 +20,6 @@ import 'package:angular_forms/angular_forms.template.dart' as _ref2;
 import 'src/hero.template.dart' as _ref3;
 import 'src/hero_switch_components.template.dart' as _ref4;
 import 'src/unless_directive.template.dart' as _ref5;
-
 import 'package:structural_directives/app_component.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'app_component.dart' as import2;
@@ -33,41 +31,41 @@ import 'package:angular_forms/src/directives/select_control_value_accessor.dart'
 import 'package:angular_forms/src/directives/ng_model.dart' as import8;
 import 'package:angular_components/material_radio/material_radio_group.template.dart' as import9;
 import 'package:angular_components/material_radio/material_radio_group.dart' as import10;
-import 'package:angular/src/core/linker/query_list.dart' as import11;
-import 'package:angular_components/material_radio/material_radio.template.dart' as import12;
-import 'package:angular_components/material_radio/material_radio.dart' as import13;
-import 'package:angular/src/common/directives/ng_switch.dart' as import14;
-import 'package:angular/src/common/directives/ng_class.dart' as import15;
-import 'src/unless_directive.dart' as import16;
+import 'package:angular_components/material_radio/material_radio.template.dart' as import11;
+import 'package:angular_components/material_radio/material_radio.dart' as import12;
+import 'package:angular/src/common/directives/ng_switch.dart' as import13;
+import 'package:angular/src/common/directives/ng_class.dart' as import14;
+import 'src/unless_directive.dart' as import15;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import18;
+import 'package:angular/src/core/linker/view_type.dart' as import17;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import20;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import19;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import 'package:angular/src/core/linker/element_ref.dart';
-import 'package:angular/src/core/zone/ng_zone.dart' as import24;
-import 'package:angular/src/core/di/opaque_token.dart' as import25;
-import 'package:angular_forms/src/directives/control_value_accessor.dart' as import26;
-import 'package:angular_forms/src/directives/ng_control.dart' as import27;
-import 'src/hero.dart' as import28;
-import 'src/hero_switch_components.template.dart' as import29;
-import 'src/hero_switch_components.dart' as import30;
-import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import31;
-import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import32;
-import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import33;
-import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import34;
-import 'package:angular_components/laminate/overlay/zindexer.dart' as import35;
-import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import36;
-import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import37;
-import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import38;
-import 'package:angular_components/laminate/enums/alignment.dart' as import39;
-import 'package:angular_components/utils/browser/window/module.dart' as import40;
-import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import41;
-import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import42;
-import 'package:angular_components/utils/disposer/disposer.dart' as import43;
-import 'package:angular/src/core/linker/component_loader.dart' as import44;
-import 'package:angular_components/laminate/overlay/module.dart' as import45;
+import 'package:angular/src/core/zone/ng_zone.dart' as import23;
+import 'package:angular/src/core/di/opaque_token.dart' as import24;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import25;
+import 'package:angular_forms/src/directives/ng_control.dart' as import26;
+import 'src/hero.dart' as import27;
+import 'src/hero_switch_components.template.dart' as import28;
+import 'src/hero_switch_components.dart' as import29;
+import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import30;
+import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import31;
+import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import32;
+import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import33;
+import 'package:angular_components/laminate/overlay/zindexer.dart' as import34;
+import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import35;
+import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import36;
+import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import37;
+import 'package:angular_components/laminate/enums/alignment.dart' as import38;
+import 'package:angular_components/utils/browser/window/module.dart' as import39;
+import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import40;
+import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import41;
+import 'package:angular_components/utils/disposer/disposer.dart' as import42;
+import 'package:angular/src/core/linker/component_loader.dart' as import43;
+import 'package:angular_components/laminate/overlay/module.dart' as import44;
+import 'dart:core';
 import 'package:angular_components/src/utils/angular/managed_zone/managed_zone.dart' as import46;
 
 const List<dynamic> styles$AppComponent = const [import0.styles];
@@ -152,46 +150,46 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import8.NgModel _NgModel_85_4;
   dynamic _NgControl_85_5;
   import10.MaterialRadioGroupComponent _MaterialRadioGroupComponent_85_6;
-  final import11.QueryList _query_MaterialRadioComponent_85_0 = new import11.QueryList();
+  bool _query_MaterialRadioComponent_85_0_isDirty = true;
   ViewContainer _appEl_86;
   import6.NgFor _NgFor_86_7;
   import3.Element _el_87;
-  import12.ViewMaterialRadioComponent0 _compView_87;
-  import13.MaterialRadioComponent _MaterialRadioComponent_87_4;
+  import11.ViewMaterialRadioComponent0 _compView_87;
+  import12.MaterialRadioComponent _MaterialRadioComponent_87_4;
   import3.Element _el_89;
   import3.DivElement _el_91;
-  import14.NgSwitch _NgSwitch_91_4;
+  import13.NgSwitch _NgSwitch_91_4;
   ViewContainer _appEl_92;
-  import14.NgSwitchWhen _NgSwitchWhen_92_7;
+  import13.NgSwitchWhen _NgSwitchWhen_92_7;
   ViewContainer _appEl_93;
-  import14.NgSwitchWhen _NgSwitchWhen_93_7;
+  import13.NgSwitchWhen _NgSwitchWhen_93_7;
   ViewContainer _appEl_94;
-  import14.NgSwitchWhen _NgSwitchWhen_94_7;
+  import13.NgSwitchWhen _NgSwitchWhen_94_7;
   ViewContainer _appEl_95;
-  import14.NgSwitchDefault _NgSwitchDefault_95_7;
+  import13.NgSwitchDefault _NgSwitchDefault_95_7;
   import3.Element _el_96;
   import3.Element _el_98;
   import3.DivElement _el_101;
-  import14.NgSwitch _NgSwitch_101_4;
+  import13.NgSwitch _NgSwitch_101_4;
   ViewContainer _appEl_102;
-  import14.NgSwitchWhen _NgSwitchWhen_102_7;
+  import13.NgSwitchWhen _NgSwitchWhen_102_7;
   ViewContainer _appEl_103;
-  import14.NgSwitchWhen _NgSwitchWhen_103_7;
+  import13.NgSwitchWhen _NgSwitchWhen_103_7;
   ViewContainer _appEl_104;
-  import14.NgSwitchWhen _NgSwitchWhen_104_7;
+  import13.NgSwitchWhen _NgSwitchWhen_104_7;
   ViewContainer _appEl_105;
-  import14.NgSwitchDefault _NgSwitchDefault_105_7;
+  import13.NgSwitchDefault _NgSwitchDefault_105_7;
   import3.Element _el_106;
   import3.DivElement _el_108;
-  import14.NgSwitch _NgSwitch_108_4;
+  import13.NgSwitch _NgSwitch_108_4;
   ViewContainer _appEl_109;
-  import14.NgSwitchWhen _NgSwitchWhen_109_7;
+  import13.NgSwitchWhen _NgSwitchWhen_109_7;
   ViewContainer _appEl_110;
-  import14.NgSwitchWhen _NgSwitchWhen_110_7;
+  import13.NgSwitchWhen _NgSwitchWhen_110_7;
   ViewContainer _appEl_111;
-  import14.NgSwitchWhen _NgSwitchWhen_111_7;
+  import13.NgSwitchWhen _NgSwitchWhen_111_7;
   ViewContainer _appEl_112;
-  import14.NgSwitchDefault _NgSwitchDefault_112_7;
+  import13.NgSwitchDefault _NgSwitchDefault_112_7;
   import3.Element _el_113;
   import3.Element _el_114;
   import3.Element _el_116;
@@ -201,22 +199,22 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.Element _el_122;
   import3.Element _el_124;
   import3.Element _el_126;
-  import15.NgClass _NgClass_126_4;
+  import14.NgClass _NgClass_126_4;
   import3.Text _text_127;
   import3.ButtonElement _el_129;
-  import15.NgClass _NgClass_129_4;
+  import14.NgClass _NgClass_129_4;
   import3.Text _text_131;
   ViewContainer _appEl_132;
-  import16.UnlessDirective _UnlessDirective_132_7;
+  import15.UnlessDirective _UnlessDirective_132_7;
   ViewContainer _appEl_133;
-  import16.UnlessDirective _UnlessDirective_133_7;
+  import15.UnlessDirective _UnlessDirective_133_7;
   import3.Element _el_134;
   ViewContainer _appEl_136;
-  import16.UnlessDirective _UnlessDirective_136_7;
+  import15.UnlessDirective _UnlessDirective_136_7;
   ViewContainer _appEl_137;
-  import16.UnlessDirective _UnlessDirective_137_7;
+  import15.UnlessDirective _UnlessDirective_137_7;
   ViewContainer _appEl_138;
-  import16.UnlessDirective _UnlessDirective_138_7;
+  import15.UnlessDirective _UnlessDirective_138_7;
   var _expr_22;
   var _expr_26;
   var _expr_30;
@@ -232,9 +230,9 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   bool _expr_41;
   bool _expr_42;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('my-app');
-    _renderType ??= import20.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
+    _renderType ??= import19.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -475,15 +473,15 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_85);
     _NgModel_85_4 = new import8.NgModel(null, null);
     _NgControl_85_5 = _NgModel_85_4;
-    _MaterialRadioGroupComponent_85_6 = new import10.MaterialRadioGroupComponent(parentView.injectorGet(import24.NgZone, viewData.parentIndex), _NgControl_85_5);
+    _MaterialRadioGroupComponent_85_6 = new import10.MaterialRadioGroupComponent(parentView.injectorGet(import23.NgZone, viewData.parentIndex), _NgControl_85_5);
     var _anchor_86 = ngAnchor.clone(false);
     _appEl_86 = new ViewContainer(86, 85, this, _anchor_86);
     TemplateRef _TemplateRef_86_6 = new TemplateRef(_appEl_86, viewFactory_AppComponent16);
     _NgFor_86_7 = new import6.NgFor(_appEl_86, _TemplateRef_86_6);
-    _compView_87 = new import12.ViewMaterialRadioComponent0(this, 87);
+    _compView_87 = new import11.ViewMaterialRadioComponent0(this, 87);
     _el_87 = _compView_87.rootEl;
     addShimC(_el_87);
-    _MaterialRadioComponent_87_4 = new import13.MaterialRadioComponent(_el_87, _compView_87.ref, _MaterialRadioGroupComponent_85_6, null, null);
+    _MaterialRadioComponent_87_4 = new import12.MaterialRadioComponent(_el_87, _compView_87.ref, _MaterialRadioGroupComponent_85_6, null, null);
     import3.Text _text_88 = new import3.Text('None of the above');
     _compView_87.create(_MaterialRadioComponent_87_4, [
       [_text_88]
@@ -497,27 +495,27 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_89.append(_text_90);
     _el_91 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_91);
-    _NgSwitch_91_4 = new import14.NgSwitch();
+    _NgSwitch_91_4 = new import13.NgSwitch();
     var _anchor_92 = ngAnchor.clone(false);
     _el_91.append(_anchor_92);
     _appEl_92 = new ViewContainer(92, 91, this, _anchor_92);
     TemplateRef _TemplateRef_92_6 = new TemplateRef(_appEl_92, viewFactory_AppComponent17);
-    _NgSwitchWhen_92_7 = new import14.NgSwitchWhen(_appEl_92, _TemplateRef_92_6, _NgSwitch_91_4);
+    _NgSwitchWhen_92_7 = new import13.NgSwitchWhen(_appEl_92, _TemplateRef_92_6, _NgSwitch_91_4);
     var _anchor_93 = ngAnchor.clone(false);
     _el_91.append(_anchor_93);
     _appEl_93 = new ViewContainer(93, 91, this, _anchor_93);
     TemplateRef _TemplateRef_93_6 = new TemplateRef(_appEl_93, viewFactory_AppComponent18);
-    _NgSwitchWhen_93_7 = new import14.NgSwitchWhen(_appEl_93, _TemplateRef_93_6, _NgSwitch_91_4);
+    _NgSwitchWhen_93_7 = new import13.NgSwitchWhen(_appEl_93, _TemplateRef_93_6, _NgSwitch_91_4);
     var _anchor_94 = ngAnchor.clone(false);
     _el_91.append(_anchor_94);
     _appEl_94 = new ViewContainer(94, 91, this, _anchor_94);
     TemplateRef _TemplateRef_94_6 = new TemplateRef(_appEl_94, viewFactory_AppComponent19);
-    _NgSwitchWhen_94_7 = new import14.NgSwitchWhen(_appEl_94, _TemplateRef_94_6, _NgSwitch_91_4);
+    _NgSwitchWhen_94_7 = new import13.NgSwitchWhen(_appEl_94, _TemplateRef_94_6, _NgSwitch_91_4);
     var _anchor_95 = ngAnchor.clone(false);
     _el_91.append(_anchor_95);
     _appEl_95 = new ViewContainer(95, 91, this, _anchor_95);
     TemplateRef _TemplateRef_95_6 = new TemplateRef(_appEl_95, viewFactory_AppComponent20);
-    _NgSwitchDefault_95_7 = new import14.NgSwitchDefault(_appEl_95, _TemplateRef_95_6, _NgSwitch_91_4);
+    _NgSwitchDefault_95_7 = new import13.NgSwitchDefault(_appEl_95, _TemplateRef_95_6, _NgSwitch_91_4);
     _el_96 = createAndAppend(doc, 'h4', parentRenderNode);
     addShimE(_el_96);
     import3.Text _text_97 = new import3.Text('NgSwitch with');
@@ -530,54 +528,54 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_96.append(_text_100);
     _el_101 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_101);
-    _NgSwitch_101_4 = new import14.NgSwitch();
+    _NgSwitch_101_4 = new import13.NgSwitch();
     var _anchor_102 = ngAnchor.clone(false);
     _el_101.append(_anchor_102);
     _appEl_102 = new ViewContainer(102, 101, this, _anchor_102);
     TemplateRef _TemplateRef_102_6 = new TemplateRef(_appEl_102, viewFactory_AppComponent21);
-    _NgSwitchWhen_102_7 = new import14.NgSwitchWhen(_appEl_102, _TemplateRef_102_6, _NgSwitch_101_4);
+    _NgSwitchWhen_102_7 = new import13.NgSwitchWhen(_appEl_102, _TemplateRef_102_6, _NgSwitch_101_4);
     var _anchor_103 = ngAnchor.clone(false);
     _el_101.append(_anchor_103);
     _appEl_103 = new ViewContainer(103, 101, this, _anchor_103);
     TemplateRef _TemplateRef_103_6 = new TemplateRef(_appEl_103, viewFactory_AppComponent22);
-    _NgSwitchWhen_103_7 = new import14.NgSwitchWhen(_appEl_103, _TemplateRef_103_6, _NgSwitch_101_4);
+    _NgSwitchWhen_103_7 = new import13.NgSwitchWhen(_appEl_103, _TemplateRef_103_6, _NgSwitch_101_4);
     var _anchor_104 = ngAnchor.clone(false);
     _el_101.append(_anchor_104);
     _appEl_104 = new ViewContainer(104, 101, this, _anchor_104);
     TemplateRef _TemplateRef_104_6 = new TemplateRef(_appEl_104, viewFactory_AppComponent23);
-    _NgSwitchWhen_104_7 = new import14.NgSwitchWhen(_appEl_104, _TemplateRef_104_6, _NgSwitch_101_4);
+    _NgSwitchWhen_104_7 = new import13.NgSwitchWhen(_appEl_104, _TemplateRef_104_6, _NgSwitch_101_4);
     var _anchor_105 = ngAnchor.clone(false);
     _el_101.append(_anchor_105);
     _appEl_105 = new ViewContainer(105, 101, this, _anchor_105);
     TemplateRef _TemplateRef_105_6 = new TemplateRef(_appEl_105, viewFactory_AppComponent24);
-    _NgSwitchDefault_105_7 = new import14.NgSwitchDefault(_appEl_105, _TemplateRef_105_6, _NgSwitch_101_4);
+    _NgSwitchDefault_105_7 = new import13.NgSwitchDefault(_appEl_105, _TemplateRef_105_6, _NgSwitch_101_4);
     _el_106 = createAndAppend(doc, 'h4', parentRenderNode);
     addShimE(_el_106);
     import3.Text _text_107 = new import3.Text('NgSwitch with <template>');
     _el_106.append(_text_107);
     _el_108 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_108);
-    _NgSwitch_108_4 = new import14.NgSwitch();
+    _NgSwitch_108_4 = new import13.NgSwitch();
     var _anchor_109 = ngAnchor.clone(false);
     _el_108.append(_anchor_109);
     _appEl_109 = new ViewContainer(109, 108, this, _anchor_109);
     TemplateRef _TemplateRef_109_6 = new TemplateRef(_appEl_109, viewFactory_AppComponent25);
-    _NgSwitchWhen_109_7 = new import14.NgSwitchWhen(_appEl_109, _TemplateRef_109_6, _NgSwitch_108_4);
+    _NgSwitchWhen_109_7 = new import13.NgSwitchWhen(_appEl_109, _TemplateRef_109_6, _NgSwitch_108_4);
     var _anchor_110 = ngAnchor.clone(false);
     _el_108.append(_anchor_110);
     _appEl_110 = new ViewContainer(110, 108, this, _anchor_110);
     TemplateRef _TemplateRef_110_6 = new TemplateRef(_appEl_110, viewFactory_AppComponent26);
-    _NgSwitchWhen_110_7 = new import14.NgSwitchWhen(_appEl_110, _TemplateRef_110_6, _NgSwitch_108_4);
+    _NgSwitchWhen_110_7 = new import13.NgSwitchWhen(_appEl_110, _TemplateRef_110_6, _NgSwitch_108_4);
     var _anchor_111 = ngAnchor.clone(false);
     _el_108.append(_anchor_111);
     _appEl_111 = new ViewContainer(111, 108, this, _anchor_111);
     TemplateRef _TemplateRef_111_6 = new TemplateRef(_appEl_111, viewFactory_AppComponent27);
-    _NgSwitchWhen_111_7 = new import14.NgSwitchWhen(_appEl_111, _TemplateRef_111_6, _NgSwitch_108_4);
+    _NgSwitchWhen_111_7 = new import13.NgSwitchWhen(_appEl_111, _TemplateRef_111_6, _NgSwitch_108_4);
     var _anchor_112 = ngAnchor.clone(false);
     _el_108.append(_anchor_112);
     _appEl_112 = new ViewContainer(112, 108, this, _anchor_112);
     TemplateRef _TemplateRef_112_6 = new TemplateRef(_appEl_112, viewFactory_AppComponent28);
-    _NgSwitchDefault_112_7 = new import14.NgSwitchDefault(_appEl_112, _TemplateRef_112_6, _NgSwitch_108_4);
+    _NgSwitchDefault_112_7 = new import13.NgSwitchDefault(_appEl_112, _TemplateRef_112_6, _NgSwitch_108_4);
     _el_113 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_113);
     _el_114 = createAndAppend(doc, 'h2', parentRenderNode);
@@ -609,14 +607,14 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_124.append(_text_125);
     _el_126 = createSpanAndAppend(doc, _el_124);
     addShimE(_el_126);
-    _NgClass_126_4 = new import15.NgClass(_el_126);
+    _NgClass_126_4 = new import14.NgClass(_el_126);
     _text_127 = new import3.Text('');
     _el_126.append(_text_127);
     import3.Text _text_128 = new import3.Text('.');
     _el_124.append(_text_128);
     _el_129 = createAndAppend(doc, 'button', _el_124);
     addShimC(_el_129);
-    _NgClass_129_4 = new import15.NgClass(_el_129);
+    _NgClass_129_4 = new import14.NgClass(_el_129);
     import3.Text _text_130 = new import3.Text('Toggle condition to ');
     _el_129.append(_text_130);
     _text_131 = new import3.Text('');
@@ -625,12 +623,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     parentRenderNode.append(_anchor_132);
     _appEl_132 = new ViewContainer(132, null, this, _anchor_132);
     TemplateRef _TemplateRef_132_6 = new TemplateRef(_appEl_132, viewFactory_AppComponent30);
-    _UnlessDirective_132_7 = new import16.UnlessDirective(_TemplateRef_132_6, _appEl_132);
+    _UnlessDirective_132_7 = new import15.UnlessDirective(_TemplateRef_132_6, _appEl_132);
     var _anchor_133 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_133);
     _appEl_133 = new ViewContainer(133, null, this, _anchor_133);
     TemplateRef _TemplateRef_133_6 = new TemplateRef(_appEl_133, viewFactory_AppComponent31);
-    _UnlessDirective_133_7 = new import16.UnlessDirective(_TemplateRef_133_6, _appEl_133);
+    _UnlessDirective_133_7 = new import15.UnlessDirective(_TemplateRef_133_6, _appEl_133);
     _el_134 = createAndAppend(doc, 'h4', parentRenderNode);
     addShimE(_el_134);
     import3.Text _text_135 = new import3.Text('UnlessDirective with template');
@@ -639,17 +637,17 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     parentRenderNode.append(_anchor_136);
     _appEl_136 = new ViewContainer(136, null, this, _anchor_136);
     TemplateRef _TemplateRef_136_6 = new TemplateRef(_appEl_136, viewFactory_AppComponent32);
-    _UnlessDirective_136_7 = new import16.UnlessDirective(_TemplateRef_136_6, _appEl_136);
+    _UnlessDirective_136_7 = new import15.UnlessDirective(_TemplateRef_136_6, _appEl_136);
     var _anchor_137 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_137);
     _appEl_137 = new ViewContainer(137, null, this, _anchor_137);
     TemplateRef _TemplateRef_137_6 = new TemplateRef(_appEl_137, viewFactory_AppComponent33);
-    _UnlessDirective_137_7 = new import16.UnlessDirective(_TemplateRef_137_6, _appEl_137);
+    _UnlessDirective_137_7 = new import15.UnlessDirective(_TemplateRef_137_6, _appEl_137);
     var _anchor_138 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_138);
     _appEl_138 = new ViewContainer(138, null, this, _anchor_138);
     TemplateRef _TemplateRef_138_6 = new TemplateRef(_appEl_138, viewFactory_AppComponent34);
-    _UnlessDirective_138_7 = new import16.UnlessDirective(_TemplateRef_138_6, _appEl_138);
+    _UnlessDirective_138_7 = new import15.UnlessDirective(_TemplateRef_138_6, _appEl_138);
     _el_33.addEventListener('click', eventHandler1(_handle_click_33_0));
     _el_49.addEventListener('change', eventHandler1(_handle_change_49_0));
     _el_52.addEventListener('change', eventHandler1(_handle_change_52_1));
@@ -660,11 +658,11 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_63.addEventListener('blur', eventHandler0(_SelectControlValueAccessor_63_4.touchHandler));
     final subscription_1 = _NgModel_63_6.update.listen(eventHandler1(_handle_ngModelChange_63_0));
     final subscription_2 = _NgModel_85_4.update.listen(eventHandler1(_handle_ngModelChange_85_0));
-    _map_0 = import20.pureProxy3((p0, p1, p2) {
+    _map_0 = import19.pureProxy3((p0, p1, p2) {
       return {'a': p0, 'b': p1, 'unless': p2};
     });
     _el_129.addEventListener('click', eventHandler1(_handle_click_129_0));
-    _map_1 = import20.pureProxy2((p0, p1) {
+    _map_1 = import19.pureProxy2((p0, p1) {
       return {'a': p0, 'b': p1};
     });
     init(const [], [subscription_0, subscription_1, subscription_2]);
@@ -676,52 +674,52 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if ((identical(token, import7.SelectControlValueAccessor) && ((52 <= nodeIndex) && (nodeIndex <= 53)))) {
       return _SelectControlValueAccessor_52_4;
     }
-    if ((identical(token, const import25.OpaqueToken<import26.ControlValueAccessor<dynamic>>('NgValueAccessor')) && ((52 <= nodeIndex) && (nodeIndex <= 53)))) {
+    if ((identical(token, const import24.OpaqueToken<import25.ControlValueAccessor<dynamic>>('NgValueAccessor')) && ((52 <= nodeIndex) && (nodeIndex <= 53)))) {
       return _NgValueAccessor_52_5;
     }
-    if (((identical(token, import8.NgModel) || identical(token, import27.NgControl)) && ((52 <= nodeIndex) && (nodeIndex <= 53)))) {
+    if (((identical(token, import8.NgModel) || identical(token, import26.NgControl)) && ((52 <= nodeIndex) && (nodeIndex <= 53)))) {
       return _NgModel_52_6;
     }
     if ((identical(token, import7.SelectControlValueAccessor) && ((63 <= nodeIndex) && (nodeIndex <= 64)))) {
       return _SelectControlValueAccessor_63_4;
     }
-    if ((identical(token, const import25.OpaqueToken<import26.ControlValueAccessor<dynamic>>('NgValueAccessor')) && ((63 <= nodeIndex) && (nodeIndex <= 64)))) {
+    if ((identical(token, const import24.OpaqueToken<import25.ControlValueAccessor<dynamic>>('NgValueAccessor')) && ((63 <= nodeIndex) && (nodeIndex <= 64)))) {
       return _NgValueAccessor_63_5;
     }
-    if (((identical(token, import8.NgModel) || identical(token, import27.NgControl)) && ((63 <= nodeIndex) && (nodeIndex <= 64)))) {
+    if (((identical(token, import8.NgModel) || identical(token, import26.NgControl)) && ((63 <= nodeIndex) && (nodeIndex <= 64)))) {
       return _NgModel_63_6;
     }
     if ((identical(token, import8.NgModel) && ((85 <= nodeIndex) && (nodeIndex <= 88)))) {
       return _NgModel_85_4;
     }
-    if ((identical(token, import27.NgControl) && ((85 <= nodeIndex) && (nodeIndex <= 88)))) {
+    if ((identical(token, import26.NgControl) && ((85 <= nodeIndex) && (nodeIndex <= 88)))) {
       return _NgControl_85_5;
     }
     if ((identical(token, import10.MaterialRadioGroupComponent) && ((85 <= nodeIndex) && (nodeIndex <= 88)))) {
       return _MaterialRadioGroupComponent_85_6;
     }
-    if ((identical(token, import14.NgSwitch) && ((91 <= nodeIndex) && (nodeIndex <= 95)))) {
+    if ((identical(token, import13.NgSwitch) && ((91 <= nodeIndex) && (nodeIndex <= 95)))) {
       return _NgSwitch_91_4;
     }
-    if ((identical(token, import14.NgSwitch) && ((101 <= nodeIndex) && (nodeIndex <= 105)))) {
+    if ((identical(token, import13.NgSwitch) && ((101 <= nodeIndex) && (nodeIndex <= 105)))) {
       return _NgSwitch_101_4;
     }
-    if ((identical(token, import14.NgSwitch) && ((108 <= nodeIndex) && (nodeIndex <= 112)))) {
+    if ((identical(token, import13.NgSwitch) && ((108 <= nodeIndex) && (nodeIndex <= 112)))) {
       return _NgSwitch_108_4;
     }
-    if ((identical(token, import16.UnlessDirective) && (132 == nodeIndex))) {
+    if ((identical(token, import15.UnlessDirective) && (132 == nodeIndex))) {
       return _UnlessDirective_132_7;
     }
-    if ((identical(token, import16.UnlessDirective) && (133 == nodeIndex))) {
+    if ((identical(token, import15.UnlessDirective) && (133 == nodeIndex))) {
       return _UnlessDirective_133_7;
     }
-    if ((identical(token, import16.UnlessDirective) && (136 == nodeIndex))) {
+    if ((identical(token, import15.UnlessDirective) && (136 == nodeIndex))) {
       return _UnlessDirective_136_7;
     }
-    if ((identical(token, import16.UnlessDirective) && (137 == nodeIndex))) {
+    if ((identical(token, import15.UnlessDirective) && (137 == nodeIndex))) {
       return _UnlessDirective_137_7;
     }
-    if ((identical(token, import16.UnlessDirective) && (138 == nodeIndex))) {
+    if ((identical(token, import15.UnlessDirective) && (138 == nodeIndex))) {
       return _UnlessDirective_138_7;
     }
     return notFoundResult;
@@ -926,15 +924,17 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _appEl_136.detectChangesInNestedViews();
     _appEl_137.detectChangesInNestedViews();
     _appEl_138.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_85_0.dirty) {
-      _query_MaterialRadioComponent_85_0.reset([
+    if (_query_MaterialRadioComponent_85_0_isDirty) {
+      _MaterialRadioGroupComponent_85_6.list = import19.flattenNodes([
         _appEl_86.mapNestedViews((_ViewAppComponent16 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         }),
         [_MaterialRadioComponent_87_4]
       ]);
-      _MaterialRadioGroupComponent_85_6.list = _query_MaterialRadioComponent_85_0;
-      _query_MaterialRadioComponent_85_0.notifyOnChanges();
+      _query_MaterialRadioComponent_85_0_isDirty = false;
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_85_6.ngAfterContentInit();
     }
     if (firstCheck) {
       _el_15.style.setProperty('display', 'block'?.toString());
@@ -943,12 +943,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       _el_17.style.setProperty('display', 'none'?.toString());
     }
     _compView_87.detectHostChanges(firstCheck);
-    final currVal_35 = import20.interpolate0(_ctx.condition);
+    final currVal_35 = import19.interpolate0(_ctx.condition);
     if (!identical(_expr_35, currVal_35)) {
       _text_127.text = currVal_35;
       _expr_35 = currVal_35;
     }
-    final currVal_37 = import20.interpolate0((_ctx.condition ? 'false' : 'true'));
+    final currVal_37 = import19.interpolate0((_ctx.condition ? 'false' : 'true'));
     if (!identical(_expr_37, currVal_37)) {
       _text_131.text = currVal_37;
       _expr_37 = currVal_37;
@@ -1043,7 +1043,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1060,7 +1060,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import20.interpolate0(_ctx.hero.name);
+    final currVal_0 = import19.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1076,7 +1076,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent2(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1092,8 +1092,8 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import28.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import20.interpolate0(local_hero.name);
+    final import27.Hero local_hero = locals['\$implicit'];
+    final currVal_0 = import19.interpolate0(local_hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1107,7 +1107,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentV
 
 class _ViewAppComponent3 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent3(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent3(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1128,7 +1128,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent3(AppView<dynamic> parentV
 
 class _ViewAppComponent4 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent4(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent4(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1151,7 +1151,7 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent5(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent5(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1168,7 +1168,7 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import20.interpolate0(_ctx.hero.name);
+    final currVal_0 = import19.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1184,7 +1184,7 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent6(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent6(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1201,7 +1201,7 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import20.interpolate0(_ctx.hero.name);
+    final currVal_0 = import19.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1216,7 +1216,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent6(AppView<dynamic> parentV
 class _ViewAppComponent7 extends AppView<import2.AppComponent> {
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent7(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent7(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1231,7 +1231,7 @@ class _ViewAppComponent7 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import20.interpolate0(_ctx.hero.name);
+    final currVal_0 = import19.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1247,7 +1247,7 @@ class _ViewAppComponent8 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent8(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent8(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1268,7 +1268,7 @@ class _ViewAppComponent8 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import20.interpolate0(_ctx.hero.name);
+    final currVal_0 = import19.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
       _expr_0 = currVal_0;
@@ -1284,7 +1284,7 @@ class _ViewAppComponent9 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_7;
-  _ViewAppComponent9(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent9(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1304,7 +1304,7 @@ class _ViewAppComponent9 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final import28.Hero local_h = locals['\$implicit'];
+    final import27.Hero local_h = locals['\$implicit'];
     _NgIf_1_7.ngIf = (_ctx.showSad || !identical(local_h.emotion, 'sad'));
     _appEl_1.detectChangesInNestedViews();
   }
@@ -1328,7 +1328,7 @@ class _ViewAppComponent10 extends AppView<import2.AppComponent> {
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent10(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent10(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1361,18 +1361,18 @@ class _ViewAppComponent10 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import28.Hero local_h = parentView.locals['\$implicit'];
+    final import27.Hero local_h = parentView.locals['\$implicit'];
     final currVal_0 = local_h;
     if (!identical(_expr_0, currVal_0)) {
       _NgSelectOption_1_4.ngValue = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import20.interpolate0(local_h.name);
+    final currVal_1 = import19.interpolate0(local_h.name);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import20.interpolate0(local_h.emotion);
+    final currVal_2 = import19.interpolate0(local_h.emotion);
     if (!identical(_expr_2, currVal_2)) {
       _text_4.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1392,7 +1392,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent10(AppView<dynamic> parent
 class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   ViewContainer _appEl_0;
   NgIf _NgIf_0_7;
-  _ViewAppComponent11(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent11(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1408,7 +1408,7 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final import28.Hero local_h = locals['\$implicit'];
+    final import27.Hero local_h = locals['\$implicit'];
     _NgIf_0_7.ngIf = (_ctx.showSad || !identical(local_h.emotion, 'sad'));
     _appEl_0.detectChangesInNestedViews();
   }
@@ -1431,7 +1431,7 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent12(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent12(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1462,18 +1462,18 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import28.Hero local_h = parentView.locals['\$implicit'];
+    final import27.Hero local_h = parentView.locals['\$implicit'];
     final currVal_0 = local_h;
     if (!identical(_expr_0, currVal_0)) {
       _NgSelectOption_0_4.ngValue = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import20.interpolate0(local_h.name);
+    final currVal_1 = import19.interpolate0(local_h.name);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import20.interpolate0(local_h.emotion);
+    final currVal_2 = import19.interpolate0(local_h.emotion);
     if (!identical(_expr_2, currVal_2)) {
       _text_3.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1497,7 +1497,7 @@ class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent13(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent13(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1521,18 +1521,18 @@ class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final bool local_odd = locals['odd'];
     final int local_i = locals['index'];
-    final import28.Hero local_hero = locals['\$implicit'];
+    final import27.Hero local_hero = locals['\$implicit'];
     final currVal_0 = local_odd;
     if (!identical(_expr_0, currVal_0)) {
       updateClass(_el_0, 'odd', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import20.interpolate0(local_i);
+    final currVal_1 = import19.interpolate0(local_i);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import20.interpolate0(local_hero.name);
+    final currVal_2 = import19.interpolate0(local_hero.name);
     if (!identical(_expr_2, currVal_2)) {
       _text_4.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1551,7 +1551,7 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent14(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent14(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1575,18 +1575,18 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final bool local_odd = locals['odd'];
     final int local_i = locals['index'];
-    final import28.Hero local_hero = locals['\$implicit'];
+    final import27.Hero local_hero = locals['\$implicit'];
     final currVal_0 = local_odd;
     if (!identical(_expr_0, currVal_0)) {
       updateClass(_el_0, 'odd', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import20.interpolate0(local_i);
+    final currVal_1 = import19.interpolate0(local_i);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import20.interpolate0(local_hero.name);
+    final currVal_2 = import19.interpolate0(local_hero.name);
     if (!identical(_expr_2, currVal_2)) {
       _text_4.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1605,7 +1605,7 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent15(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent15(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null, 'index': null, 'odd': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -1629,18 +1629,18 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final bool local_odd = locals['odd'];
     final int local_i = locals['index'];
-    final import28.Hero local_hero = locals['\$implicit'];
+    final import27.Hero local_hero = locals['\$implicit'];
     final currVal_0 = local_odd;
     if (!identical(_expr_0, currVal_0)) {
       updateClass(_el_0, 'odd', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import20.interpolate0(local_i);
+    final currVal_1 = import19.interpolate0(local_i);
     if (!identical(_expr_1, currVal_1)) {
       _text_2.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import20.interpolate0(local_hero.name);
+    final currVal_2 = import19.interpolate0(local_hero.name);
     if (!identical(_expr_2, currVal_2)) {
       _text_4.text = currVal_2;
       _expr_2 = currVal_2;
@@ -1654,20 +1654,20 @@ AppView<import2.AppComponent> viewFactory_AppComponent15(AppView<dynamic> parent
 
 class _ViewAppComponent16 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import12.ViewMaterialRadioComponent0 _compView_0;
-  import13.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import11.ViewMaterialRadioComponent0 _compView_0;
+  import12.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import3.Text _text_1;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent16(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent16(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import12.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import11.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import13.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_85_6, null, null);
+    _MaterialRadioComponent_0_4 = new import12.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_85_6, null, null);
     _text_1 = new import3.Text('');
     _compView_0.create(_MaterialRadioComponent_0_4, [
       [_text_1]
@@ -1680,7 +1680,7 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final import28.Hero local_h = locals['\$implicit'];
+    final import27.Hero local_h = locals['\$implicit'];
     changed = false;
     final currVal_0 = local_h;
     if (!identical(_expr_0, currVal_0)) {
@@ -1692,7 +1692,7 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_1 = import20.interpolate0(local_h.name);
+    final currVal_1 = import19.interpolate0(local_h.name);
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
@@ -1702,7 +1702,7 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewAppComponent0)._query_MaterialRadioComponent_85_0.setDirty();
+    (parentView as ViewAppComponent0)._query_MaterialRadioComponent_85_0_isDirty = true;
   }
 
   @override
@@ -1718,18 +1718,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent16(AppView<dynamic> parent
 
 class _ViewAppComponent17 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewHappyHeroComponent0 _compView_0;
-  import30.HappyHeroComponent _HappyHeroComponent_0_4;
+  import28.ViewHappyHeroComponent0 _compView_0;
+  import29.HappyHeroComponent _HappyHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent17(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent17(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewHappyHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewHappyHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HappyHeroComponent_0_4 = new import30.HappyHeroComponent();
+    _HappyHeroComponent_0_4 = new import29.HappyHeroComponent();
     _compView_0.create(_HappyHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1737,7 +1737,7 @@ class _ViewAppComponent17 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.HappyHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.HappyHeroComponent) && (0 == nodeIndex))) {
       return _HappyHeroComponent_0_4;
     }
     return notFoundResult;
@@ -1766,18 +1766,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent17(AppView<dynamic> parent
 
 class _ViewAppComponent18 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewSadHeroComponent0 _compView_0;
-  import30.SadHeroComponent _SadHeroComponent_0_4;
+  import28.ViewSadHeroComponent0 _compView_0;
+  import29.SadHeroComponent _SadHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent18(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent18(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewSadHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewSadHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _SadHeroComponent_0_4 = new import30.SadHeroComponent();
+    _SadHeroComponent_0_4 = new import29.SadHeroComponent();
     _compView_0.create(_SadHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1785,7 +1785,7 @@ class _ViewAppComponent18 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.SadHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.SadHeroComponent) && (0 == nodeIndex))) {
       return _SadHeroComponent_0_4;
     }
     return notFoundResult;
@@ -1814,18 +1814,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent18(AppView<dynamic> parent
 
 class _ViewAppComponent19 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewConfusedHeroComponent0 _compView_0;
-  import30.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
+  import28.ViewConfusedHeroComponent0 _compView_0;
+  import29.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent19(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent19(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewConfusedHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewConfusedHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _ConfusedHeroComponent_0_4 = new import30.ConfusedHeroComponent();
+    _ConfusedHeroComponent_0_4 = new import29.ConfusedHeroComponent();
     _compView_0.create(_ConfusedHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1833,7 +1833,7 @@ class _ViewAppComponent19 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.ConfusedHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.ConfusedHeroComponent) && (0 == nodeIndex))) {
       return _ConfusedHeroComponent_0_4;
     }
     return notFoundResult;
@@ -1862,18 +1862,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent19(AppView<dynamic> parent
 
 class _ViewAppComponent20 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewUnknownHeroComponent0 _compView_0;
-  import30.UnknownHeroComponent _UnknownHeroComponent_0_4;
+  import28.ViewUnknownHeroComponent0 _compView_0;
+  import29.UnknownHeroComponent _UnknownHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent20(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent20(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewUnknownHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewUnknownHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _UnknownHeroComponent_0_4 = new import30.UnknownHeroComponent();
+    _UnknownHeroComponent_0_4 = new import29.UnknownHeroComponent();
     _compView_0.create(_UnknownHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1881,7 +1881,7 @@ class _ViewAppComponent20 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.UnknownHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.UnknownHeroComponent) && (0 == nodeIndex))) {
       return _UnknownHeroComponent_0_4;
     }
     return notFoundResult;
@@ -1910,18 +1910,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent20(AppView<dynamic> parent
 
 class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewHappyHeroComponent0 _compView_0;
-  import30.HappyHeroComponent _HappyHeroComponent_0_4;
+  import28.ViewHappyHeroComponent0 _compView_0;
+  import29.HappyHeroComponent _HappyHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent21(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent21(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewHappyHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewHappyHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HappyHeroComponent_0_4 = new import30.HappyHeroComponent();
+    _HappyHeroComponent_0_4 = new import29.HappyHeroComponent();
     _compView_0.create(_HappyHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1929,7 +1929,7 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.HappyHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.HappyHeroComponent) && (0 == nodeIndex))) {
       return _HappyHeroComponent_0_4;
     }
     return notFoundResult;
@@ -1958,18 +1958,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent21(AppView<dynamic> parent
 
 class _ViewAppComponent22 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewSadHeroComponent0 _compView_0;
-  import30.SadHeroComponent _SadHeroComponent_0_4;
+  import28.ViewSadHeroComponent0 _compView_0;
+  import29.SadHeroComponent _SadHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent22(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent22(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewSadHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewSadHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _SadHeroComponent_0_4 = new import30.SadHeroComponent();
+    _SadHeroComponent_0_4 = new import29.SadHeroComponent();
     _compView_0.create(_SadHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -1977,7 +1977,7 @@ class _ViewAppComponent22 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.SadHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.SadHeroComponent) && (0 == nodeIndex))) {
       return _SadHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2006,18 +2006,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent22(AppView<dynamic> parent
 
 class _ViewAppComponent23 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewConfusedHeroComponent0 _compView_0;
-  import30.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
+  import28.ViewConfusedHeroComponent0 _compView_0;
+  import29.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent23(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent23(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewConfusedHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewConfusedHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _ConfusedHeroComponent_0_4 = new import30.ConfusedHeroComponent();
+    _ConfusedHeroComponent_0_4 = new import29.ConfusedHeroComponent();
     _compView_0.create(_ConfusedHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2025,7 +2025,7 @@ class _ViewAppComponent23 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.ConfusedHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.ConfusedHeroComponent) && (0 == nodeIndex))) {
       return _ConfusedHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2054,18 +2054,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent23(AppView<dynamic> parent
 
 class _ViewAppComponent24 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewUnknownHeroComponent0 _compView_0;
-  import30.UnknownHeroComponent _UnknownHeroComponent_0_4;
+  import28.ViewUnknownHeroComponent0 _compView_0;
+  import29.UnknownHeroComponent _UnknownHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent24(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent24(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewUnknownHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewUnknownHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _UnknownHeroComponent_0_4 = new import30.UnknownHeroComponent();
+    _UnknownHeroComponent_0_4 = new import29.UnknownHeroComponent();
     _compView_0.create(_UnknownHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2073,7 +2073,7 @@ class _ViewAppComponent24 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.UnknownHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.UnknownHeroComponent) && (0 == nodeIndex))) {
       return _UnknownHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2102,18 +2102,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent24(AppView<dynamic> parent
 
 class _ViewAppComponent25 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewHappyHeroComponent0 _compView_0;
-  import30.HappyHeroComponent _HappyHeroComponent_0_4;
+  import28.ViewHappyHeroComponent0 _compView_0;
+  import29.HappyHeroComponent _HappyHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent25(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent25(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewHappyHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewHappyHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HappyHeroComponent_0_4 = new import30.HappyHeroComponent();
+    _HappyHeroComponent_0_4 = new import29.HappyHeroComponent();
     _compView_0.create(_HappyHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2121,7 +2121,7 @@ class _ViewAppComponent25 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.HappyHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.HappyHeroComponent) && (0 == nodeIndex))) {
       return _HappyHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2150,18 +2150,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent25(AppView<dynamic> parent
 
 class _ViewAppComponent26 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewSadHeroComponent0 _compView_0;
-  import30.SadHeroComponent _SadHeroComponent_0_4;
+  import28.ViewSadHeroComponent0 _compView_0;
+  import29.SadHeroComponent _SadHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent26(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent26(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewSadHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewSadHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _SadHeroComponent_0_4 = new import30.SadHeroComponent();
+    _SadHeroComponent_0_4 = new import29.SadHeroComponent();
     _compView_0.create(_SadHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2169,7 +2169,7 @@ class _ViewAppComponent26 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.SadHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.SadHeroComponent) && (0 == nodeIndex))) {
       return _SadHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2198,18 +2198,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent26(AppView<dynamic> parent
 
 class _ViewAppComponent27 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewConfusedHeroComponent0 _compView_0;
-  import30.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
+  import28.ViewConfusedHeroComponent0 _compView_0;
+  import29.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent27(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent27(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewConfusedHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewConfusedHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _ConfusedHeroComponent_0_4 = new import30.ConfusedHeroComponent();
+    _ConfusedHeroComponent_0_4 = new import29.ConfusedHeroComponent();
     _compView_0.create(_ConfusedHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2217,7 +2217,7 @@ class _ViewAppComponent27 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.ConfusedHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.ConfusedHeroComponent) && (0 == nodeIndex))) {
       return _ConfusedHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2246,18 +2246,18 @@ AppView<import2.AppComponent> viewFactory_AppComponent27(AppView<dynamic> parent
 
 class _ViewAppComponent28 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import29.ViewUnknownHeroComponent0 _compView_0;
-  import30.UnknownHeroComponent _UnknownHeroComponent_0_4;
+  import28.ViewUnknownHeroComponent0 _compView_0;
+  import29.UnknownHeroComponent _UnknownHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent28(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent28(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import29.ViewUnknownHeroComponent0(this, 0);
+    _compView_0 = new import28.ViewUnknownHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _UnknownHeroComponent_0_4 = new import30.UnknownHeroComponent();
+    _UnknownHeroComponent_0_4 = new import29.UnknownHeroComponent();
     _compView_0.create(_UnknownHeroComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -2265,7 +2265,7 @@ class _ViewAppComponent28 extends AppView<import2.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.UnknownHeroComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import29.UnknownHeroComponent) && (0 == nodeIndex))) {
       return _UnknownHeroComponent_0_4;
     }
     return notFoundResult;
@@ -2294,7 +2294,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent28(AppView<dynamic> parent
 
 class _ViewAppComponent29 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent29(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent29(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2315,7 +2315,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent29(AppView<dynamic> parent
 
 class _ViewAppComponent30 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent30(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent30(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2337,7 +2337,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent30(AppView<dynamic> parent
 
 class _ViewAppComponent31 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent31(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent31(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2359,7 +2359,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent31(AppView<dynamic> parent
 
 class _ViewAppComponent32 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent32(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent32(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2380,7 +2380,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent32(AppView<dynamic> parent
 
 class _ViewAppComponent33 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent33(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent33(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2402,7 +2402,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent33(AppView<dynamic> parent
 
 class _ViewAppComponent34 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  _ViewAppComponent34(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent34(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -2430,87 +2430,87 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   List<dynamic> __defaultPopupPositions_0_5;
   dynamic __Window_0_6;
   dynamic __DomService_0_7;
-  import31.AcxImperativeViewUtils __AcxImperativeViewUtils_0_8;
+  import30.AcxImperativeViewUtils __AcxImperativeViewUtils_0_8;
   dynamic __Document_0_9;
-  import32.DomRuler __DomRuler_0_10;
-  import33.Angular2ManagedZone __ManagedZone_0_11;
+  import31.DomRuler __DomRuler_0_10;
+  import32.Angular2ManagedZone __ManagedZone_0_11;
   dynamic __overlayContainerName_0_12;
   dynamic __overlayContainerParent_0_13;
   dynamic __overlayContainer_0_14;
   bool __overlaySyncDom_0_15;
   bool __overlayRepositionLoop_0_16;
-  import34.OverlayStyleConfig __OverlayStyleConfig_0_17;
-  import35.ZIndexer __ZIndexer_0_18;
-  import36.OverlayDomRenderService __OverlayDomRenderService_0_19;
-  import37.OverlayService __OverlayService_0_20;
-  import38.DomPopupSourceFactory __DomPopupSourceFactory_0_21;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import33.OverlayStyleConfig __OverlayStyleConfig_0_17;
+  import34.ZIndexer __ZIndexer_0_18;
+  import35.OverlayDomRenderService __OverlayDomRenderService_0_19;
+  import36.OverlayService __OverlayService_0_20;
+  import37.DomPopupSourceFactory __DomPopupSourceFactory_0_21;
+  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _defaultPopupPositions_0_5 {
     if ((this.__defaultPopupPositions_0_5 == null)) {
-      (__defaultPopupPositions_0_5 = const [const import39.RelativePosition(animationOrigin: 'top center'), const import39.RelativePosition(animationOrigin: 'top right', originX: const import39.Alignment('End', 'flex-end')), const import39.RelativePosition(animationOrigin: 'top left', originX: const import39.Alignment('Start', 'flex-start')), const import39.RelativePosition(animationOrigin: 'bottom center', originY: const import39.Alignment('End', 'flex-end')), const import39.RelativePosition(animationOrigin: 'bottom right', originX: const import39.Alignment('End', 'flex-end'), originY: const import39.Alignment('End', 'flex-end')), const import39.RelativePosition(animationOrigin: 'bottom left', originX: const import39.Alignment('Start', 'flex-start'), originY: const import39.Alignment('End', 'flex-end'))]);
+      (__defaultPopupPositions_0_5 = const [const import38.RelativePosition(animationOrigin: 'top center'), const import38.RelativePosition(animationOrigin: 'top right', originX: const import38.Alignment('End', 'flex-end')), const import38.RelativePosition(animationOrigin: 'top left', originX: const import38.Alignment('Start', 'flex-start')), const import38.RelativePosition(animationOrigin: 'bottom center', originY: const import38.Alignment('End', 'flex-end')), const import38.RelativePosition(animationOrigin: 'bottom right', originX: const import38.Alignment('End', 'flex-end'), originY: const import38.Alignment('End', 'flex-end')), const import38.RelativePosition(animationOrigin: 'bottom left', originX: const import38.Alignment('Start', 'flex-start'), originY: const import38.Alignment('End', 'flex-end'))]);
     }
     return this.__defaultPopupPositions_0_5;
   }
 
   dynamic get _Window_0_6 {
     if ((this.__Window_0_6 == null)) {
-      (__Window_0_6 = import40.getWindow());
+      (__Window_0_6 = import39.getWindow());
     }
     return this.__Window_0_6;
   }
 
   dynamic get _DomService_0_7 {
     if ((this.__DomService_0_7 == null)) {
-      (__DomService_0_7 = import41.createDomService(this.injectorGet(import42.DomService, this.viewData.parentIndex, null), this.injectorGet(import43.Disposer, this.viewData.parentIndex, null), this.injectorGet(import24.NgZone, this.viewData.parentIndex), this._Window_0_6));
+      (__DomService_0_7 = import40.createDomService(this.injectorGet(import41.DomService, this.viewData.parentIndex, null), this.injectorGet(import42.Disposer, this.viewData.parentIndex, null), this.injectorGet(import23.NgZone, this.viewData.parentIndex), this._Window_0_6));
     }
     return this.__DomService_0_7;
   }
 
-  import31.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_8 {
+  import30.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_8 {
     if ((this.__AcxImperativeViewUtils_0_8 == null)) {
-      (__AcxImperativeViewUtils_0_8 = new import31.AcxImperativeViewUtils(this.injectorGet(import44.ComponentLoader, this.viewData.parentIndex), this._DomService_0_7));
+      (__AcxImperativeViewUtils_0_8 = new import30.AcxImperativeViewUtils(this.injectorGet(import43.ComponentLoader, this.viewData.parentIndex), this._DomService_0_7));
     }
     return this.__AcxImperativeViewUtils_0_8;
   }
 
   dynamic get _Document_0_9 {
     if ((this.__Document_0_9 == null)) {
-      (__Document_0_9 = import40.getDocument());
+      (__Document_0_9 = import39.getDocument());
     }
     return this.__Document_0_9;
   }
 
-  import32.DomRuler get _DomRuler_0_10 {
+  import31.DomRuler get _DomRuler_0_10 {
     if ((this.__DomRuler_0_10 == null)) {
-      (__DomRuler_0_10 = new import32.DomRuler(this._Document_0_9, this._DomService_0_7));
+      (__DomRuler_0_10 = new import31.DomRuler(this._Document_0_9, this._DomService_0_7));
     }
     return this.__DomRuler_0_10;
   }
 
-  import33.Angular2ManagedZone get _ManagedZone_0_11 {
+  import32.Angular2ManagedZone get _ManagedZone_0_11 {
     if ((this.__ManagedZone_0_11 == null)) {
-      (__ManagedZone_0_11 = new import33.Angular2ManagedZone(this.injectorGet(import24.NgZone, this.viewData.parentIndex)));
+      (__ManagedZone_0_11 = new import32.Angular2ManagedZone(this.injectorGet(import23.NgZone, this.viewData.parentIndex)));
     }
     return this.__ManagedZone_0_11;
   }
 
   dynamic get _overlayContainerName_0_12 {
     if ((this.__overlayContainerName_0_12 == null)) {
-      (__overlayContainerName_0_12 = import45.getDefaultContainerName(this.injectorGet(const import25.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
+      (__overlayContainerName_0_12 = import44.getDefaultContainerName(this.injectorGet(const import24.OpaqueToken('overlayContainerName'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainerName_0_12;
   }
 
   dynamic get _overlayContainerParent_0_13 {
     if ((this.__overlayContainerParent_0_13 == null)) {
-      (__overlayContainerParent_0_13 = import45.getOverlayContainerParent(this._Document_0_9, this.injectorGet(const import25.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
+      (__overlayContainerParent_0_13 = import44.getOverlayContainerParent(this._Document_0_9, this.injectorGet(const import24.OpaqueToken('overlayContainerParent'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainerParent_0_13;
   }
 
   dynamic get _overlayContainer_0_14 {
     if ((this.__overlayContainer_0_14 == null)) {
-      (__overlayContainer_0_14 = import45.getDefaultContainer(this._overlayContainerName_0_12, this._overlayContainerParent_0_13, this.injectorGet(const import25.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
+      (__overlayContainer_0_14 = import44.getDefaultContainer(this._overlayContainerName_0_12, this._overlayContainerParent_0_13, this.injectorGet(const import24.OpaqueToken('overlayContainer'), this.viewData.parentIndex, null)));
     }
     return this.__overlayContainer_0_14;
   }
@@ -2524,42 +2524,42 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
 
   bool get _overlayRepositionLoop_0_16 {
     if ((this.__overlayRepositionLoop_0_16 == null)) {
-      (__overlayRepositionLoop_0_16 = false);
+      (__overlayRepositionLoop_0_16 = true);
     }
     return this.__overlayRepositionLoop_0_16;
   }
 
-  import34.OverlayStyleConfig get _OverlayStyleConfig_0_17 {
+  import33.OverlayStyleConfig get _OverlayStyleConfig_0_17 {
     if ((this.__OverlayStyleConfig_0_17 == null)) {
-      (__OverlayStyleConfig_0_17 = new import34.OverlayStyleConfig(this._Document_0_9));
+      (__OverlayStyleConfig_0_17 = new import33.OverlayStyleConfig(this._Document_0_9));
     }
     return this.__OverlayStyleConfig_0_17;
   }
 
-  import35.ZIndexer get _ZIndexer_0_18 {
+  import34.ZIndexer get _ZIndexer_0_18 {
     if ((this.__ZIndexer_0_18 == null)) {
-      (__ZIndexer_0_18 = new import35.ZIndexer());
+      (__ZIndexer_0_18 = new import34.ZIndexer());
     }
     return this.__ZIndexer_0_18;
   }
 
-  import36.OverlayDomRenderService get _OverlayDomRenderService_0_19 {
+  import35.OverlayDomRenderService get _OverlayDomRenderService_0_19 {
     if ((this.__OverlayDomRenderService_0_19 == null)) {
-      (__OverlayDomRenderService_0_19 = new import36.OverlayDomRenderService(this._OverlayStyleConfig_0_17, this._overlayContainer_0_14, this._overlayContainerName_0_12, this._DomRuler_0_10, this._DomService_0_7, this._AcxImperativeViewUtils_0_8, this._overlaySyncDom_0_15, this._overlayRepositionLoop_0_16, this._ZIndexer_0_18));
+      (__OverlayDomRenderService_0_19 = new import35.OverlayDomRenderService(this._OverlayStyleConfig_0_17, this._overlayContainer_0_14, this._overlayContainerName_0_12, this._DomRuler_0_10, this._DomService_0_7, this._AcxImperativeViewUtils_0_8, this._overlaySyncDom_0_15, this._overlayRepositionLoop_0_16, this._ZIndexer_0_18));
     }
     return this.__OverlayDomRenderService_0_19;
   }
 
-  import37.OverlayService get _OverlayService_0_20 {
+  import36.OverlayService get _OverlayService_0_20 {
     if ((this.__OverlayService_0_20 == null)) {
-      (__OverlayService_0_20 = new import37.OverlayService(this.injectorGet(import24.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_15, this._OverlayDomRenderService_0_19, this.injectorGet(import37.OverlayService, this.viewData.parentIndex, null)));
+      (__OverlayService_0_20 = new import36.OverlayService(this.injectorGet(import23.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_15, this._OverlayDomRenderService_0_19, this.injectorGet(import36.OverlayService, this.viewData.parentIndex, null)));
     }
     return this.__OverlayService_0_20;
   }
 
-  import38.DomPopupSourceFactory get _DomPopupSourceFactory_0_21 {
+  import37.DomPopupSourceFactory get _DomPopupSourceFactory_0_21 {
     if ((this.__DomPopupSourceFactory_0_21 == null)) {
-      (__DomPopupSourceFactory_0_21 = new import38.DomPopupSourceFactory(this._DomRuler_0_10));
+      (__DomPopupSourceFactory_0_21 = new import37.DomPopupSourceFactory(this._DomRuler_0_10));
     }
     return this.__DomPopupSourceFactory_0_21;
   }
@@ -2579,55 +2579,55 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import2.AppComponent) && (0 == nodeIndex))) {
       return _AppComponent_0_4;
     }
-    if ((identical(token, const import25.OpaqueToken('defaultPopupPositions')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken<List<import38.RelativePosition>>('defaultPopupPositions')) && (0 == nodeIndex))) {
       return _defaultPopupPositions_0_5;
     }
     if ((identical(token, import3.Window) && (0 == nodeIndex))) {
       return _Window_0_6;
     }
-    if ((identical(token, import42.DomService) && (0 == nodeIndex))) {
+    if ((identical(token, import41.DomService) && (0 == nodeIndex))) {
       return _DomService_0_7;
     }
-    if ((identical(token, import31.AcxImperativeViewUtils) && (0 == nodeIndex))) {
+    if ((identical(token, import30.AcxImperativeViewUtils) && (0 == nodeIndex))) {
       return _AcxImperativeViewUtils_0_8;
     }
     if ((identical(token, import3.Document) && (0 == nodeIndex))) {
       return _Document_0_9;
     }
-    if ((identical(token, import32.DomRuler) && (0 == nodeIndex))) {
+    if ((identical(token, import31.DomRuler) && (0 == nodeIndex))) {
       return _DomRuler_0_10;
     }
     if ((identical(token, import46.ManagedZone) && (0 == nodeIndex))) {
       return _ManagedZone_0_11;
     }
-    if ((identical(token, const import25.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken('overlayContainerName')) && (0 == nodeIndex))) {
       return _overlayContainerName_0_12;
     }
-    if ((identical(token, const import25.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken('overlayContainerParent')) && (0 == nodeIndex))) {
       return _overlayContainerParent_0_13;
     }
-    if ((identical(token, const import25.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken('overlayContainer')) && (0 == nodeIndex))) {
       return _overlayContainer_0_14;
     }
-    if ((identical(token, const import25.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken('overlaySyncDom')) && (0 == nodeIndex))) {
       return _overlaySyncDom_0_15;
     }
-    if ((identical(token, const import25.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
+    if ((identical(token, const import24.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
       return _overlayRepositionLoop_0_16;
     }
-    if ((identical(token, import34.OverlayStyleConfig) && (0 == nodeIndex))) {
+    if ((identical(token, import33.OverlayStyleConfig) && (0 == nodeIndex))) {
       return _OverlayStyleConfig_0_17;
     }
-    if ((identical(token, import35.ZIndexer) && (0 == nodeIndex))) {
+    if ((identical(token, import34.ZIndexer) && (0 == nodeIndex))) {
       return _ZIndexer_0_18;
     }
-    if ((identical(token, import36.OverlayDomRenderService) && (0 == nodeIndex))) {
+    if ((identical(token, import35.OverlayDomRenderService) && (0 == nodeIndex))) {
       return _OverlayDomRenderService_0_19;
     }
-    if ((identical(token, import37.OverlayService) && (0 == nodeIndex))) {
+    if ((identical(token, import36.OverlayService) && (0 == nodeIndex))) {
       return _OverlayService_0_20;
     }
-    if ((identical(token, import38.DomPopupSourceFactory) && (0 == nodeIndex))) {
+    if ((identical(token, import37.DomPopupSourceFactory) && (0 == nodeIndex))) {
       return _DomPopupSourceFactory_0_21;
     }
     return notFoundResult;
@@ -2656,14 +2656,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }
