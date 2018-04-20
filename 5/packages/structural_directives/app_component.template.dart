@@ -427,7 +427,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_71 = createAndAppend(doc, 'p', _el_70);
     _el_71.className = 'code';
     addShimE(_el_71);
-    import3.Text _text_72 = new import3.Text('<div *ngFor="let hero of heroes; let i=index; let odd=odd; trackBy: trackById" [class.odd]="odd">');
+    import3.Text _text_72 = new import3.Text('<div *ngFor="let hero of heroes; let i=index; let odd=odd; trackBy: trackByHeroId" [class.odd]="odd">');
     _el_71.append(_text_72);
     final _anchor_73 = createViewContainerAnchor();
     _el_70.append(_anchor_73);
@@ -437,7 +437,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_74 = createAndAppend(doc, 'p', _el_70);
     _el_74.className = 'code';
     addShimE(_el_74);
-    import3.Text _text_75 = new import3.Text('<div template="ngFor let hero of heroes; let i=index; let odd=odd; trackBy: trackById" [class.odd]="odd">');
+    import3.Text _text_75 = new import3.Text('<div template="ngFor let hero of heroes; let i=index; let odd=odd; trackBy: trackByHeroId" [class.odd]="odd">');
     _el_74.append(_text_75);
     final _anchor_76 = createViewContainerAnchor();
     _el_70.append(_anchor_76);
@@ -447,7 +447,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_77 = createAndAppend(doc, 'p', _el_70);
     _el_77.className = 'code';
     addShimE(_el_77);
-    import3.Text _text_78 = new import3.Text('<template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd" [ngForTrackBy]="trackById">');
+    import3.Text _text_78 = new import3.Text('<template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd" [ngForTrackBy]="trackByHeroId">');
     _el_77.append(_text_78);
     final _anchor_79 = createViewContainerAnchor();
     _el_70.append(_anchor_79);
@@ -772,8 +772,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_73_9.ngForOf = _ctx.heroes);
       }
-      if (!identical(_ctx.trackById, null)) {
-        (_NgFor_73_9.ngForTrackBy = _ctx.trackById);
+      if (!identical(_ctx.trackByHeroId, null)) {
+        (_NgFor_73_9.ngForTrackBy = _ctx.trackByHeroId);
       }
     }
     _NgFor_73_9.ngDoCheck();
@@ -781,8 +781,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_76_9.ngForOf = _ctx.heroes);
       }
-      if (!identical(_ctx.trackById, null)) {
-        (_NgFor_76_9.ngForTrackBy = _ctx.trackById);
+      if (!identical(_ctx.trackByHeroId, null)) {
+        (_NgFor_76_9.ngForTrackBy = _ctx.trackByHeroId);
       }
     }
     _NgFor_76_9.ngDoCheck();
@@ -790,8 +790,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_79_9.ngForOf = _ctx.heroes);
       }
-      if (!identical(_ctx.trackById, null)) {
-        (_NgFor_79_9.ngForTrackBy = _ctx.trackById);
+      if (!identical(_ctx.trackByHeroId, null)) {
+        (_NgFor_79_9.ngForTrackBy = _ctx.trackByHeroId);
       }
     }
     _NgFor_79_9.ngDoCheck();
